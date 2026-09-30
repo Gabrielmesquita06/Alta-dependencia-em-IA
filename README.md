@@ -147,7 +147,7 @@ Utiliza IA para resumir conteúdos complexos e se preparar para provas e vestibu
 
 **Wireframes:** *[PREENCHER: inserir os protótipos de tela — próxima etapa do cronograma, Semana 6.]*
 
-**Protótipo Interativo:** *[PREENCHER: inserir o link do protótipo navegável, ex. Figma.]*
+**Protótipo Interativo:** https://www.figma.com/site/hySwcy7LmXbknO37sfUkC3/Sem-t%C3%ADtulo?node-id=0-1&t=Vl3tF47L1766HlRb-1
 
 ---
 
