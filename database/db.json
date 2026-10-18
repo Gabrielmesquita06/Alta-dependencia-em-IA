@@ -1,0 +1,210 @@
+{
+  "Users": [
+    {
+      "id": "e2d5b3ca-4971-49b4-bc11-a8df38365d12",
+      "awnsers": {
+        "form awnsers": [
+          {
+            "questionId": "form-1",
+            "letter": "C"
+          },
+          {
+            "questionId": "form-2",
+            "letter": "C"
+          }
+        ]
+      },
+      "level": "low level",
+      "routine": {
+       "time_without_IA": "2 hours",
+        "time_no_IA_start": "2024-06-01T10:00:00Z",
+        "time_no_IA_end": "2024-06-01T12:00:00Z",
+        "exercise_time": "2024-06-01T14:00:00Z"
+      },
+      "progress": {
+        "day": 1,
+        "quiz awnsers": [
+          {
+            "day": 1,
+            "exerciseId": "low-1",
+            "letter": "C",
+            "correct": true,
+            "completed": true
+          }
+        ],
+        "feedback": [
+          {
+            "day": 1,
+            "text": "Consegui concluir o exercício sem consultar uma IA."
+          }
+        ]
+      }
+    }
+  ],
+  "Form": [
+    {
+      "id": "form-1",
+      "question": "Quando encontra uma tarefa nova, o que você costuma fazer primeiro?",
+      "alternates": [
+        {
+          "text": "Peço à IA que resolva a tarefa inteira.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Peço uma orientação à IA e depois tento resolver.",
+          "letter": "B",
+          "points": 1
+        },
+        {
+          "text": "Tento resolver por conta própria antes de buscar ajuda.",
+          "letter": "C",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": "form-2",
+      "question": "Quando utiliza uma resposta gerada por IA, como você a avalia?",
+      "alternates": [
+        {
+          "text": "Uso a resposta sem conferir.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Confiro apenas quando algo parece estranho.",
+          "letter": "B",
+          "points": 1
+        },
+        {
+          "text": "Confiro as informações e verifico se consigo explicar a resposta.",
+          "letter": "C",
+          "points": 2
+        }
+      ]
+    }
+  ],
+  "Exercices": {
+    "critical": [
+      {
+        "id": "critical-1",
+        "question": "Qual número completa a sequência: 2, 4, 6, 8, ...?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "9"
+          },
+          {
+            "letter": "B",
+            "text": "10"
+          },
+          {
+            "letter": "C",
+            "text": "12"
+          }
+        ],
+        "correct_awnser": "B"
+      },
+      {
+        "id": "critical-2",
+        "question": "Qual afirmação descreve um uso consciente da IA?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Conferir a resposta e tentar compreender o raciocínio."
+          },
+          {
+            "letter": "B",
+            "text": "Copiar toda resposta sem revisar."
+          },
+          {
+            "letter": "C",
+            "text": "Usar a IA como única fonte em qualquer situação."
+          }
+        ],
+        "correct_awnser": "A"
+      }
+    ],
+    "attention": [
+      {
+        "id": "attention-1",
+        "question": "Qual número completa a sequência: 3, 6, 12, 24, ...?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "30"
+          },
+          {
+            "letter": "B",
+            "text": "36"
+          },
+          {
+            "letter": "C",
+            "text": "48"
+          }
+        ],
+        "correct_awnser": "C"
+      },
+      {
+        "id": "attention-2",
+        "question": "Um texto afirma que um produto funciona, mas não apresenta evidências. Qual é a melhor atitude?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Aceitar a afirmação porque está bem escrita."
+          },
+          {
+            "letter": "B",
+            "text": "Procurar evidências e comparar fontes antes de concluir."
+          },
+          {
+            "letter": "C",
+            "text": "Compartilhar a afirmação antes de verificar."
+          }
+        ],
+        "correct_awnser": "B"
+      }
+    ],
+    "low level": [
+      {
+        "id": "low-1",
+        "question": "Se todos os elementos do grupo A pertencem ao grupo B e X pertence a A, o que podemos concluir?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "X não pertence a B."
+          },
+          {
+            "letter": "B",
+            "text": "Todos os elementos de B pertencem a A."
+          },
+          {
+            "letter": "C",
+            "text": "X pertence a B."
+          }
+        ],
+        "correct_awnser": "C"
+      },
+      {
+        "id": "low-2",
+        "question": "Um estudo encontrou uma associação entre dois fatores. Isso, por si só, demonstra que um causa o outro?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Sim, qualquer associação demonstra causa."
+          },
+          {
+            "letter": "B",
+            "text": "Não, é necessário investigar outras explicações e evidências."
+          },
+          {
+            "letter": "C",
+            "text": "Sim, desde que os fatores ocorram ao mesmo tempo."
+          }
+        ],
+        "correct_awnser": "B"
+      }
+    ]
+  }
+}
