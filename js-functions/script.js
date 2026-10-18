@@ -19,13 +19,18 @@ async function SubmitForm(UserResponse){
     let score = 0;
     const user_object = {
         id : crypto.randomUUID(),
-        form_answers : new Array(UserResponse.length),
+        form_answers : [],
         level : '',
         routine : {
-           time_without_IA : 0, 
-           time_no_IA_start : 0,
-           time_no_IA_end : 0,
-           exercise_time : 0
+           time_without_IA : null, 
+           time_no_IA_start : null,
+           time_no_IA_end : null,
+           exercise_time : null,
+        },
+        progress: {
+            day : null,
+            quiz_answers : [],
+            feedback : []
         }
     }
     for(let i = 0; i < UserResponse.length; i++){
@@ -56,5 +61,5 @@ async function SubmitForm(UserResponse){
         user_object.level = 'Controlado';
     }
 
-    return await registerUser(user_object);
+    return registerUser(user_object);
 }
