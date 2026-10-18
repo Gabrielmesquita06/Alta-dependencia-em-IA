@@ -28,7 +28,7 @@ export async function SubmitForm(UserResponse){
            exercise_time : null,
         },
         progress: {
-            day : null,
+            day : 1,
             quiz_answers : [],
             feedback : []
         }
@@ -54,13 +54,74 @@ export async function SubmitForm(UserResponse){
     }
 
     if (score >= 80) {
-        user_object.level = 'Crítico';
+        user_object.level = 'critical';
     } else if (score >= 60) {
-        user_object.level = 'Atenção';
+        user_object.level = 'attention';
     }  else {
-        user_object.level = 'Controlado';
+        user_object.level = 'low-level';
     }
 
     return registerUser(user_object);
 }
 
+export async function checkUserExists(userId) {
+    try {
+        const response = await axios.get(`${users}/${userId}`);
+        return true;
+    } catch (error) {
+        if (error.response && error.response.status === 404) {
+            return false; 
+        }
+        throw error;
+    }
+}
+
+export async function getUserExercises(userId) {
+    let userExists = await checkUserExists(userId);
+    if (!userExists) {
+        throw new Error('Usuário não encontrado');
+    }
+     try {
+        let userLevel = await axios.get(`${users}/${userId}`);
+        let level = userLevel.data.level;
+        let exercises = await axios.get(`${exercises}/${level}`);
+        return exercises.data;
+    } catch (error) {
+        throw new Error('Erro ao buscar exercícios do usuário');
+    }
+}
+export async function submitQuizAnswers(userId, quizAnswers) {
+    let userExists = await checkUserExists(userId);
+    if (!userExists) {
+        throw new Error('Usuário não encontrado');
+    }
+    const objectToUpdate = {
+            day : 1,
+            exerciseId : "",
+            letter : "",
+            correct : null,
+            completed : null
+    }
+    for (let i = 0; i < quizAnswers.length; i++) {
+        objectToUpdate.day++;
+        objectToUpdate.exerciseId = quizAnswers[i].exerciseId;
+        objectToUpdate.letter = quizAnswers[i].letter;
+        objectToUpdate.correct = quizAnswers[i].correct;
+        objectToUpdate.completed = quizAnswers[i].completed;
+    }
+    try { 
+        const response = await axios.patch(`${users}/${userId}`, objectToUpdate);
+        return response.data;
+    } catch (error) {
+        throw new Error('Erro ao enviar respostas do quiz');
+    }
+}
+
+export async function getFormQuestions(){
+   try {
+        const objectquestions = await axios.get(form);
+        return objectquestions.data;
+    } catch (error) {
+        throw new Error('Erro ao buscar perguntas do formulário');
+    }
+}
