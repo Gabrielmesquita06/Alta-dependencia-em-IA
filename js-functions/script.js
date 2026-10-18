@@ -5,7 +5,7 @@ const form = 'http://localhost:3000/Form'
 const exercises = 'http://localhost:3000/exercises'
 
 
-async function registerUser(userData){
+export async function registerUser(userData){
     try {
         const response = await axios.post(users, userData);
         return response.data;
@@ -15,7 +15,7 @@ async function registerUser(userData){
     }
 }
 
-async function SubmitForm(UserResponse){
+export async function SubmitForm(UserResponse){
     let score = 0;
     const user_object = {
         id : crypto.randomUUID(),
@@ -63,3 +63,4 @@ async function SubmitForm(UserResponse){
 
     return registerUser(user_object);
 }
+
