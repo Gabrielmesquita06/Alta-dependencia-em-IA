@@ -4,6 +4,19 @@ const users = 'https://localhost:3000/users'; // Substitua pelo URL do seu servi
 const form = 'http://localhost:3000/Form'
 const exercises = 'http://localhost:3000/exercises'
 
+async function getAwnserScore (FormId, letter){
+try{
+    const response = await axios.get(`${form}/${FormId}`);
+    const alternates = response.data.alternates
+    let points = 0;
+    for(let i = 0; i < alternates.length; i++){
+        if (alternates[i].letter == letter.toUpperCase()) points += alternates[i].points;
+    }
+    return points;
+}catch(error){
+    throw error;
+};
+}
 
 export async function registerUser(userData){
     try {
@@ -14,7 +27,15 @@ export async function registerUser(userData){
         throw error;
     }
 }
-
+export async function GetUserData(UserId) 
+ {
+   try { const response = await axios.get(`${users}/${UserId}`);
+        return response.data;
+}
+   catch(error){
+    throw error;
+   };
+}
 export async function SubmitForm(UserResponse){
     let score = 0;
     const user_object = {
@@ -35,22 +56,7 @@ export async function SubmitForm(UserResponse){
     }
     for(let i = 0; i < UserResponse.length; i++){
         user_object.form_answers[i] = UserResponse[i];
-        switch(UserResponse[i].letter.toUpperCase()){
-            case 'A':
-                score += 10;
-                break;
-            case 'B':
-                score += 20;
-                break;
-            case 'C':
-                score += 30;
-                break;
-            case 'D':
-                score += 40;
-                break;
-            default:
-                throw new Error(`Opção inválida: ${UserResponse[i].letter}`);
-        }
+        score += await getAwnserScore(UserResponse[i].questionId, UserResponse[i].letter)
     }
 
     if (score >= 80) {
@@ -60,8 +66,10 @@ export async function SubmitForm(UserResponse){
     }  else {
         user_object.level = 'low-level';
     }
-
-    return registerUser(user_object);
+   
+   const response = await registerUser(user_object);
+    localStorage.setItem('userId', user_object.id);
+    return response;
 }
 
 export async function checkUserExists(userId) {
@@ -84,8 +92,8 @@ export async function getUserExercises(userId) {
      try {
         let userLevel = await axios.get(`${users}/${userId}`);
         let level = userLevel.data.level;
-        let exercises = await axios.get(`${exercises}/${level}`);
-        return exercises.data;
+        let exercise = await axios.get(`${exercises}/${level}`);
+        return exercise.data;
     } catch (error) {
         throw new Error('Erro ao buscar exercícios do usuário');
     }
@@ -95,19 +103,22 @@ export async function submitQuizAnswers(userId, quizAnswers) {
     if (!userExists) {
         throw new Error('Usuário não encontrado');
     }
-    const objectToUpdate = {
-            day : 1,
-            exerciseId : "",
-            letter : "",
-            correct : null,
-            completed : null
-    }
+    const userdata = await GetUserData(userId);
+    const objectToUpdate = [];
     for (let i = 0; i < quizAnswers.length; i++) {
-        objectToUpdate.day++;
-        objectToUpdate.exerciseId = quizAnswers[i].exerciseId;
-        objectToUpdate.letter = quizAnswers[i].letter;
-        objectToUpdate.correct = quizAnswers[i].correct;
-        objectToUpdate.completed = quizAnswers[i].completed;
+      objectToUpdate.push({
+        progress : {
+        day : userdata.progress.day + 1,
+        quiz_answers: [{
+        exerciseId : quizAnswers[i].exerciseId,
+        letter : quizAnswers[i].letter,
+        correct : quizAnswers[i].correct,
+        completed : quizAnswers[i].completed}],
+        feedback : [{
+            day : this.day,
+            text : quizAnswers.feedback
+        }]
+    }});
     }
     try { 
         const response = await axios.patch(`${users}/${userId}`, objectToUpdate);
@@ -124,4 +135,8 @@ export async function getFormQuestions(){
     } catch (error) {
         throw new Error('Erro ao buscar perguntas do formulário');
     }
+}
+
+export async function getUserID(){
+    return localStorage.getItem('userId');
 }

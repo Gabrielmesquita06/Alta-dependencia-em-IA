@@ -1,9 +1,9 @@
 {
-  "Users": [
+  "users": [
     {
       "id": "e2d5b3ca-4971-49b4-bc11-a8df38365d12",
       "awnsers": {
-        "form awnsers": [
+        "form_awnsers": [
           {
             "questionId": "form-1",
             "letter": "C"
@@ -23,7 +23,7 @@
       },
       "progress": {
         "day": 1,
-        "quiz awnsers": [
+        "quiz_awnsers": [
           {
             "day": 1,
             "exerciseId": "low-1",
