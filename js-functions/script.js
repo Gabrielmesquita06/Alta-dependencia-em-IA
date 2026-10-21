@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { use } from 'react';
 
 const users = 'https://localhost:3000/users'; // Substitua pelo URL do seu servidor backend
 const form = 'http://localhost:3000/Form'
@@ -104,21 +105,14 @@ export async function submitQuizAnswers(userId, quizAnswers) {
         throw new Error('Usuário não encontrado');
     }
     const userdata = await GetUserData(userId);
-    const objectToUpdate = [];
-    for (let i = 0; i < quizAnswers.length; i++) {
-      objectToUpdate.push({
+    const objectToUpdate = {
         progress : {
+        ...userdata.progress,
         day : userdata.progress.day + 1,
-        quiz_answers: [{
-        exerciseId : quizAnswers[i].exerciseId,
-        letter : quizAnswers[i].letter,
-        correct : quizAnswers[i].correct,
-        completed : quizAnswers[i].completed}],
-        feedback : [{
-            day : this.day,
-            text : quizAnswers.feedback
-        }]
-    }});
+        quiz_answers: [...userdata.progress.quiz_answers]
+    }};
+    for (let i = 0; i < quizAnswers.length; i++) {
+    objectToUpdate.progress.quiz_answers.push(quizAnswers[i]);
     }
     try { 
         const response = await axios.patch(`${users}/${userId}`, objectToUpdate);
@@ -137,6 +131,24 @@ export async function getFormQuestions(){
     }
 }
 
-export async function getUserID(){
+export function getUserID(){
     return localStorage.getItem('userId');
+}
+
+export async function SubimitUserFeedback(feedback, UserId) {
+    const userdata = await axios.get(`${users}/${UserId}`);
+    const progress = userdata.data.progress;
+    const objectToUpdate = 
+    { progress : {
+        ...progress,
+        feedback : [...progress.feedback]
+    }};
+    objectToUpdate.progress.feedback.push(feedback);
+    try
+    {
+        const send = await axios.patch(`${users}/${UserId}`, objectToUpdate);
+        return send.data;
+    }catch(error){
+        throw Error("Erro ao enviar feedback");
+    }
 }
