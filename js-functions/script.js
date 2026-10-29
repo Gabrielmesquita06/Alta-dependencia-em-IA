@@ -1,14 +1,26 @@
-import axios from 'axios';
-import { use } from 'react';
-
-const users = 'https://localhost:3000/users'; // Substitua pelo URL do seu servidor backend
+const users = 'http://localhost:3000/users';
 const form = 'http://localhost:3000/Form'
 const exercises = 'http://localhost:3000/exercises'
 
+async function request (url, metodo = "GET", objectpost) {
+    const response = await fetch(url, 
+    {
+        method: metodo,
+        headers:{'Content-Type': 'application/json'},
+        body: JSON.stringify(objectpost)
+    });
+    if (!response.ok){
+        const error = new Error(`Erro HTTP! status: ${response.status}`);
+        error.status = response.status;
+        throw error;
+    }
+    return response.json();
+}
+
 async function getAwnserScore (FormId, letter){
 try{
-    const response = await axios.get(`${form}/${FormId}`);
-    const alternates = response.data.alternates
+    const response = await request(`${form}/${FormId}`);
+    const alternates = response.alternates
     let points = 0;
     for(let i = 0; i < alternates.length; i++){
         if (alternates[i].letter == letter.toUpperCase()) points += alternates[i].points;
@@ -21,8 +33,8 @@ try{
 
 export async function registerUser(userData){
     try {
-        const response = await axios.post(users, userData);
-        return response.data;
+        const response = await request(users, 'POST', userData);
+        return response;
     } catch (error) {
         console.error('Erro ao registrar o usuário:', error);
         throw error;
@@ -30,8 +42,8 @@ export async function registerUser(userData){
 }
 export async function GetUserData(UserId) 
  {
-   try { const response = await axios.get(`${users}/${UserId}`);
-        return response.data;
+   try { const response = await request(`${users}/${UserId}`);
+        return response;
 }
    catch(error){
     throw error;
@@ -75,10 +87,10 @@ export async function SubmitForm(UserResponse){
 
 export async function checkUserExists(userId) {
     try {
-        const response = await axios.get(`${users}/${userId}`);
+        await request(`${users}/${userId}`);
         return true;
     } catch (error) {
-        if (error.response && error.response.status === 404) {
+        if (error.status === 404) {
             return false; 
         }
         throw error;
@@ -91,10 +103,10 @@ export async function getUserExercises(userId) {
         throw new Error('Usuário não encontrado');
     }
      try {
-        let userLevel = await axios.get(`${users}/${userId}`);
-        let level = userLevel.data.level;
-        let exercise = await axios.get(`${exercises}/${level}`);
-        return exercise.data;
+        let userLevel = await request(`${users}/${userId}`);
+        let level = userLevel.level;
+        let exercise = await request(`${exercises}/${level}`);
+        return exercise;
     } catch (error) {
         throw new Error('Erro ao buscar exercícios do usuário');
     }
@@ -115,8 +127,8 @@ export async function submitQuizAnswers(userId, quizAnswers) {
     objectToUpdate.progress.quiz_answers.push(quizAnswers[i]);
     }
     try { 
-        const response = await axios.patch(`${users}/${userId}`, objectToUpdate);
-        return response.data;
+        const response = await request(`${users}/${userId}`,"PATCH", objectToUpdate);
+        return response;
     } catch (error) {
         throw new Error('Erro ao enviar respostas do quiz');
     }
@@ -124,8 +136,8 @@ export async function submitQuizAnswers(userId, quizAnswers) {
 
 export async function getFormQuestions(){
    try {
-        const objectquestions = await axios.get(form);
-        return objectquestions.data;
+        const objectquestions = await request(form);
+        return objectquestions;
     } catch (error) {
         throw new Error('Erro ao buscar perguntas do formulário');
     }
@@ -136,8 +148,8 @@ export function getUserID(){
 }
 
 export async function SubimitUserFeedback(feedback, UserId) {
-    const userdata = await axios.get(`${users}/${UserId}`);
-    const progress = userdata.data.progress;
+    const userdata = await request(`${users}/${UserId}`);
+    const progress = userdata.progress;
     const objectToUpdate = 
     { progress : {
         ...progress,
@@ -146,8 +158,8 @@ export async function SubimitUserFeedback(feedback, UserId) {
     objectToUpdate.progress.feedback.push(feedback);
     try
     {
-        const send = await axios.patch(`${users}/${UserId}`, objectToUpdate);
-        return send.data;
+        const send = await request(`${users}/${UserId}`,"PATCH", objectToUpdate);
+        return send;
     }catch(error){
         throw Error("Erro ao enviar feedback");
     }

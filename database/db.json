@@ -85,7 +85,7 @@
       ]
     }
   ],
-  "Exercices": {
+  "exercices": {
     "critical": [
       {
         "id": "critical-1",
