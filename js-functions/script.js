@@ -1,7 +1,7 @@
 const users = 'http://localhost:3000/users';
 const form = 'http://localhost:3000/Form'
 const exercises = 'http://localhost:3000/exercises'
-
+//Requisição de fetch universal criada
 async function request (url, metodo = "GET", objectpost) {
     const response = await fetch(url, 
     {

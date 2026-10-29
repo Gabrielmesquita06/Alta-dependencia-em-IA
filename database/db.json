@@ -44,43 +44,433 @@
   "Form": [
     {
       "id": "form-1",
-      "question": "Quando encontra uma tarefa nova, o que você costuma fazer primeiro?",
+      "category": "Autonomia e capacidade de raciocínio",
+      "question": "Quando você recebe uma atividade ou precisa resolver um problema, o que costuma fazer primeiro?",
       "alternates": [
         {
-          "text": "Peço à IA que resolva a tarefa inteira.",
+          "text": "Tento resolver sozinho antes de procurar ajuda.",
           "letter": "A",
           "points": 0
         },
         {
-          "text": "Peço uma orientação à IA e depois tento resolver.",
+          "text": "Tento pensar um pouco, mas logo recorro à IA para que ela me ajude a resolver.",
           "letter": "B",
-          "points": 1
+          "points": 3
         },
         {
-          "text": "Tento resolver por conta própria antes de buscar ajuda.",
+          "text": "Tento pensar um pouco, mas logo abro a IA e peço uma resposta sem explicação.",
           "letter": "C",
-          "points": 2
+          "points": 5
+        },
+        {
+          "text": "Não penso, peço que resolva tudo por mim imediatamente.",
+          "letter": "D",
+          "points": 7
         }
       ]
     },
     {
       "id": "form-2",
-      "question": "Quando utiliza uma resposta gerada por IA, como você a avalia?",
+      "category": "Autonomia e capacidade de raciocínio",
+      "question": "Quando você precisa realizar uma tarefa que nunca fez antes, como costuma agir?",
       "alternates": [
         {
-          "text": "Uso a resposta sem conferir.",
+          "text": "Tento compreender o problema e desenvolver uma solução própria.",
           "letter": "A",
           "points": 0
         },
         {
-          "text": "Confiro apenas quando algo parece estranho.",
+          "text": "Tento resolver sozinho, mas utilizo a IA quando encontro dificuldades.",
           "letter": "B",
-          "points": 1
+          "points": 3
         },
         {
-          "text": "Confiro as informações e verifico se consigo explicar a resposta.",
+          "text": "Peço a IA que me explique como fazer antes de tentar.",
           "letter": "C",
-          "points": 2
+          "points": 5
+        },
+        {
+          "text": "Peço a tarefa completa sem nem tentar.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-3",
+      "category": "Autonomia e capacidade de raciocínio",
+      "question": "Se você ficasse o dia inteiro sem acesso a IA, como se sentiria em relação as suas atividades?",
+      "alternates": [
+        {
+          "text": "Conseguiria realizar minhas atividades normalmente.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Sentiria falta da ferramenta, mas conseguiria continuar.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Teria bastante dificuldade para realizar algumas tarefas.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Ficaria praticamente incapaz de realizar varias tarefas",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-4",
+      "category": "Aprendizado e desenvolvimento intelectual",
+      "question": "Quando você utiliza a IA para estudar um assunto, o que costuma fazer?",
+      "alternates": [
+        {
+          "text": "Tento compreender o conteúdo, relaciona-lo ao que já sei e explica-lo com minhas próprias palavras.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Leio a explicação  da IA e tento entender o conteúdo só com a base de informação que a IA me deu.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Leio a explicação mas não procuro aprofundar o assunto.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Copio a resposta sem compreender o conteúdo.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-5",
+      "category": "Aprendizado e desenvolvimento intelectual",
+      "question": "Depois de usar a IA para aprender alguma coisa, você consegue explicar o conteúdo sem consultá-la?",
+      "alternates": [
+        {
+          "text": "Sim, geralmente consigo explicar com minhas próprias palavras.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Consigo explicar boa parte, mas tenho dificuldade com alguns detalhes.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Tenho dificuldade de explicar o conteúdo sem consultar a resposta.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Geralmente não consigo explicar o conteúdo mesmo depois de consultar a resposta.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-6",
+      "category": "Aprendizado e desenvolvimento intelectual",
+      "question": "Quando a IA resolve um exercício ou apresenta uma solução, o que você costuma fazer?",
+      "alternates": [
+        {
+          "text": "Analiso a solução para compreender como o problema foi resolvido.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Leio a solução para compreender como o problema foi resolvido.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Observo a resposta final e apenas algumas partes da explicação.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Utilizo a resposta sem procurar entender como ela foi obtida.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-7",
+      "category": "Dependência emocional e comportamental",
+      "question": "Quando você precisa tomar uma decisão ou resolver um problema, com que frequência sente necessidade de consultar a IA antes de decidir?",
+      "alternates": [
+        {
+          "text": "Raramente. Costumo analisar a situação por conta própria.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Às vezes, principalmente quando tenho dúvidas.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Frequentemente, mesmo quando consigo analisar a situação sozinho.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Quase sempre. Tenho dificuldade para decidir sem consultar a IA.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-8",
+      "category": "Dependência emocional e comportamental",
+      "question": "Quando a IA não está disponível ou não consegue responder à sua pergunta, o que você faz?",
+      "alternates": [
+        {
+          "text": "Procuro outras fontes ou tento encontrar uma solução sozinho.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Tento resolver o problema, embora possa demorar mais.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Fico bastante frustrado e tenho dificuldade para continuar.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Geralmente abandono a tarefa ou espero até conseguir utilizar a IA novamente.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-9",
+      "category": "Dependência emocional e comportamental",
+      "question": "Você já deixou de tentar resolver alguma atividade sozinho porque acreditou que a IA conseguiria fazer melhor ou mais rapidamente?",
+      "alternates": [
+        {
+          "text": "Raramente ou nunca.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Às vezes, principalmente em tarefas repetitivas.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Frequentemente, inclusive em tarefas que eu poderia realizar sozinho.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Quase sempre. Prefiro deixar que a IA resolva as coisas por mim.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-10",
+      "category": "Pensamento crítico e confiança nas respostas",
+      "question": "Quando a IA apresenta uma informação ou resposta, como você costuma agir?",
+      "alternates": [
+        {
+          "text": "Analiso a resposta e verifico informações importantes em fontes confiáveis.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Avalio se a resposta faz sentido, mas nem sempre verifico as fontes.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Geralmente aceito a resposta quando ela parece convincente.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Costumo confiar na resposta sem questioná-la.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-11",
+      "category": "Pensamento crítico e confiança nas respostas",
+      "question": "Se a resposta da IA for diferente do que você aprendeu ou do que acredita estar correto, o que você faz?",
+      "alternates": [
+        {
+          "text": "Investigo a divergência e procuro descobrir qual informação está correta.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Questiono a IA e peço uma explicação.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Fico em dúvida, mas geralmente acabo aceitando a resposta da IA.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Presumo que a IA esteja certa, mesmo sem verificar.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-12",
+      "category": "Pensamento crítico e confiança nas respostas",
+      "question": "Quando você utiliza um texto, código ou trabalho produzido pela IA, como costuma proceder?",
+      "alternates": [
+        {
+          "text": "Reviso o conteúdo, verifico se está correto e faço as adaptações necessárias.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Leio o conteúdo e faço algumas alterações antes de utilizá-lo.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Faço poucas verificações e utilizo boa parte do resultado original.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Utilizo o resultado praticamente como foi produzido, sem verificar se está correto.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-13",
+      "category": "Uso consciente e responsabilidade",
+      "question": "Quando você decide utilizar a IA para realizar uma tarefa, qual costuma ser seu principal objetivo?",
+      "alternates": [
+        {
+          "text": "Aprender, esclarecer dúvidas, explorar ideias ou melhorar um trabalho que estou desenvolvendo.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Facilitar algumas etapas da tarefa, mantendo minha participação no processo.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Conseguir respostas rapidamente, mesmo que eu não compreenda completamente o resultado.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Evitar ter que pensar ou realizar a tarefa por conta própria.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-14",
+      "category": "Uso consciente e responsabilidade",
+      "question": "Com que frequência você utiliza a IA em tarefas que conseguiria realizar sozinho e que seriam importantes para desenvolver suas habilidades?",
+      "alternates": [
+        {
+          "text": "Raramente. Tento realizar essas tarefas por conta própria.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Às vezes, mas procuro participar ativamente do processo.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Frequentemente, mesmo quando poderia aproveitar a oportunidade para aprender.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Quase sempre. Prefiro deixar essas tarefas para a IA.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-15",
+      "category": "Uso consciente e responsabilidade",
+      "question": "Quando precisa produzir algo que será avaliado, como um trabalho acadêmico ou um projeto de programação, qual alternativa melhor representa seu comportamento?",
+      "alternates": [
+        {
+          "text": "Desenvolvo minhas próprias ideias e utilizo a IA como apoio, revisando e compreendendo o resultado.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Utilizo a IA para desenvolver partes do trabalho, mas procuro compreender e revisar o que será entregue.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Dependo bastante do conteúdo gerado pela IA e tenho dificuldade para explicar algumas partes do resultado.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Deixo a IA produzir a maior parte do trabalho e entrego o resultado sem compreender completamente como foi desenvolvido.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-16",
+      "category": "Disponibilidade",
+      "question": "Informe a sua disponibilidade para que possamos preparar uma rotina que se encaixe na sua.",
+      "alternates": [
+        {
+          "text": "Pela manhã",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "À tarde",
+          "letter": "B",
+          "points": 0
+        },
+        {
+          "text": "À noite",
+          "letter": "C",
+          "points": 0
+        },
+        {
+          "text": "Qualquer horário",
+          "letter": "D",
+          "points": 0
         }
       ]
     }

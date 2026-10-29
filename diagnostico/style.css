@@ -1,0 +1,78 @@
+:root {
+  --azul: #0575c6;
+  --azul-escuro: #04507f;
+  --azul-claro: #a9c4ee;
+  --fundo: #252a3d;
+  --vermelho: #e03131;
+  --amarelo: #ffd43b;
+  --verde: #2f9e44;
+}
+
+body {
+  background-color: var(--fundo);
+}
+
+.header,
+.footer {
+  background-color: var(--azul);
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+
+.card-resultado {
+  background-color: var(--azul-claro);
+  border-radius: 16px;
+  color: #111;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.card-resultado h2 {
+  letter-spacing: 2px;
+}
+
+.nivel-box {
+  min-height: 90px;
+  border: 2px solid #222;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.btn-escuro {
+  background-color: var(--azul-escuro);
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  transition: transform 0.15s, background-color 0.15s;
+}
+
+.btn-escuro:hover {
+  background-color: var(--azul);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.legenda {
+  border-radius: 12px;
+  padding: 0.9rem;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.critico { background-color: var(--vermelho); color: #fff; }
+.atencao { background-color: var(--amarelo); color: #222; }
+.correto { background-color: var(--verde); color: #fff; }
+
+/* Classes aplicadas ao #nivel via JS conforme o resultado */
+.nivel-box.critico,
+.nivel-box.atencao,
+.nivel-box.correto {
+  border-color: transparent;
+}
