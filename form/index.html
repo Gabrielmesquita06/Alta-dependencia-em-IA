@@ -1,11 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>PLACEHOLDIS</h1>
-</body>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <header class="d-flex align-items-center justify-content-center mb-4"
+        style="background-color: #0a5e7a; height: 80px;">
+      <a href="\main\index.html"><img src="../icons/logo.png" alt="Logo" height="80"></a>  
+    </header>
+
+    <div class="container pb-5">
+        <div class="form-wrapper mx-auto">
+
+            <!-- Cabeçalho do formulário -->
+            <div class=" text-white p-4 rounded-top">
+                <h1 class="fs-3 mb-2">Responda esse Formulario e receba seu diagnostico</h1>
+                <p class="mb-0 opacity-75">Quando concluir clique em enviar respostas e receba seu diagnostico</p>
+            </div>
+
+            <!-- Corpo do formulário -->
+            <form id="Form" class=" p-4 rounded-bottom shadow-lg">
+
+                <div id="questions"></div>
+
+
+                <div class="text-end">
+                    <button type="submit" class="btn bg-blue text-white fw-bold px-4">Enviar Respostas</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
 </html>

@@ -31,15 +31,6 @@ try{
 };
 }
 
-export async function registerUser(userData){
-    try {
-        const response = await request(users, 'POST', userData);
-        return response;
-    } catch (error) {
-        console.error('Erro ao registrar o usuário:', error);
-        throw error;
-    }
-}
 export async function GetUserData(UserId) 
  {
    try { const response = await request(`${users}/${UserId}`);
@@ -50,9 +41,10 @@ export async function GetUserData(UserId)
    };
 }
 export async function SubmitForm(UserResponse){
+    const savedUserId = localStorage.getItem('userId');
+    const userexists = savedUserId ? await checkUserExists(savedUserId) : false;
     let score = 0;
     const user_object = {
-        id : crypto.randomUUID(),
         form_answers : [],
         level : '',
         routine : {
@@ -80,8 +72,17 @@ export async function SubmitForm(UserResponse){
         user_object.level = 'low-level';
     }
    
-   const response = await registerUser(user_object);
-    localStorage.setItem('userId', user_object.id);
+    let response;
+    if (userexists) {
+        // Usuário já existe: atualiza só respostas e nível, sem criar outro registro
+        response = await request(`${users}/${savedUserId}`, 'PATCH', {
+            form_answers: user_object.form_answers,
+            level: user_object.level
+        });
+    } else {
+        response = await request(users, 'POST', user_object);
+    }
+    localStorage.setItem('userId', response.id);
     return response;
 }
 
@@ -105,7 +106,8 @@ export async function getUserExercises(userId) {
      try {
         let userLevel = await request(`${users}/${userId}`);
         let level = userLevel.level;
-        let exercise = await request(`${exercises}/${level}`);
+        const allExercises = await request(exercises);
+        let exercise = allExercises[level];
         return exercise;
     } catch (error) {
         throw new Error('Erro ao buscar exercícios do usuário');
