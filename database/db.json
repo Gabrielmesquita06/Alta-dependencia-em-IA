@@ -1,0 +1,2187 @@
+{
+  "users": [
+    {
+      "id": "L9p_Sq9yjq0",
+      "form_answers": [
+        {
+          "questionId": "form-1",
+          "letter": "B"
+        },
+        {
+          "questionId": "form-2",
+          "letter": "A"
+        },
+        {
+          "questionId": "form-3",
+          "letter": "C"
+        },
+        {
+          "questionId": "form-4",
+          "letter": "D"
+        },
+        {
+          "questionId": "form-5",
+          "letter": "D"
+        },
+        {
+          "questionId": "form-6",
+          "letter": "D"
+        },
+        {
+          "questionId": "form-7",
+          "letter": "B"
+        },
+        {
+          "questionId": "form-8",
+          "letter": "C"
+        },
+        {
+          "questionId": "form-9",
+          "letter": "D"
+        },
+        {
+          "questionId": "form-10",
+          "letter": "C"
+        },
+        {
+          "questionId": "form-11",
+          "letter": "D"
+        },
+        {
+          "questionId": "form-12",
+          "letter": "B"
+        },
+        {
+          "questionId": "form-13",
+          "letter": "A"
+        },
+        {
+          "questionId": "form-14",
+          "letter": "D"
+        },
+        {
+          "questionId": "form-15",
+          "letter": "B"
+        },
+        {
+          "questionId": "form-16",
+          "letter": "B"
+        }
+      ],
+      "level": "attention",
+      "routine": {
+        "time_without_IA": null,
+        "time_no_IA_start": null,
+        "time_no_IA_end": null,
+        "exercise_time": null
+      },
+      "progress": {
+        "day": 1,
+        "quiz_answers": [],
+        "feedback": []
+      }
+    },
+    {
+      "form_answers": [
+        {
+          "questionId": "form-1",
+          "letter": "A"
+        },
+        {
+          "questionId": "form-2",
+          "letter": "A"
+        },
+        {
+          "questionId": "form-3",
+          "letter": "A"
+        },
+        {
+          "questionId": "form-4",
+          "letter": "A"
+        },
+        {
+          "questionId": "form-5",
+          "letter": "A"
+        },
+        {
+          "questionId": "form-6",
+          "letter": "A"
+        },
+        {
+          "questionId": "form-7",
+          "letter": "A"
+        },
+        {
+          "questionId": "form-8",
+          "letter": "A"
+        },
+        {
+          "questionId": "form-9",
+          "letter": "A"
+        },
+        {
+          "questionId": "form-10",
+          "letter": "A"
+        },
+        {
+          "questionId": "form-11",
+          "letter": "A"
+        },
+        {
+          "questionId": "form-12",
+          "letter": "A"
+        },
+        {
+          "questionId": "form-13",
+          "letter": "A"
+        },
+        {
+          "questionId": "form-14",
+          "letter": "A"
+        },
+        {
+          "questionId": "form-15",
+          "letter": "A"
+        },
+        {
+          "questionId": "form-16",
+          "letter": "A"
+        }
+      ],
+      "level": "low-level",
+      "routine": {
+        "time_without_IA": null,
+        "time_no_IA_start": null,
+        "time_no_IA_end": null,
+        "exercise_time": null
+      },
+      "progress": {
+        "day": 1,
+        "quiz_answers": [],
+        "feedback": []
+      },
+      "id": "8rlx-H2J_8g"
+    }
+  ],
+  "Form": [
+    {
+      "id": "form-1",
+      "category": "Autonomia e capacidade de raciocínio",
+      "question": "Quando você recebe uma atividade ou precisa resolver um problema, o que costuma fazer primeiro?",
+      "alternates": [
+        {
+          "text": "Tento resolver sozinho antes de procurar ajuda.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Tento pensar um pouco, mas logo recorro à IA para que ela me ajude a resolver.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Tento pensar um pouco, mas logo abro a IA e peço uma resposta sem explicação.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Não penso, peço que resolva tudo por mim imediatamente.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-2",
+      "category": "Autonomia e capacidade de raciocínio",
+      "question": "Quando você precisa realizar uma tarefa que nunca fez antes, como costuma agir?",
+      "alternates": [
+        {
+          "text": "Tento compreender o problema e desenvolver uma solução própria.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Tento resolver sozinho, mas utilizo a IA quando encontro dificuldades.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Peço a IA que me explique como fazer antes de tentar.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Peço a tarefa completa sem nem tentar.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-3",
+      "category": "Autonomia e capacidade de raciocínio",
+      "question": "Se você ficasse o dia inteiro sem acesso a IA, como se sentiria em relação as suas atividades?",
+      "alternates": [
+        {
+          "text": "Conseguiria realizar minhas atividades normalmente.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Sentiria falta da ferramenta, mas conseguiria continuar.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Teria bastante dificuldade para realizar algumas tarefas.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Ficaria praticamente incapaz de realizar varias tarefas",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-4",
+      "category": "Aprendizado e desenvolvimento intelectual",
+      "question": "Quando você utiliza a IA para estudar um assunto, o que costuma fazer?",
+      "alternates": [
+        {
+          "text": "Tento compreender o conteúdo, relaciona-lo ao que já sei e explica-lo com minhas próprias palavras.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Leio a explicação  da IA e tento entender o conteúdo só com a base de informação que a IA me deu.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Leio a explicação mas não procuro aprofundar o assunto.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Copio a resposta sem compreender o conteúdo.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-5",
+      "category": "Aprendizado e desenvolvimento intelectual",
+      "question": "Depois de usar a IA para aprender alguma coisa, você consegue explicar o conteúdo sem consultá-la?",
+      "alternates": [
+        {
+          "text": "Sim, geralmente consigo explicar com minhas próprias palavras.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Consigo explicar boa parte, mas tenho dificuldade com alguns detalhes.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Tenho dificuldade de explicar o conteúdo sem consultar a resposta.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Geralmente não consigo explicar o conteúdo mesmo depois de consultar a resposta.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-6",
+      "category": "Aprendizado e desenvolvimento intelectual",
+      "question": "Quando a IA resolve um exercício ou apresenta uma solução, o que você costuma fazer?",
+      "alternates": [
+        {
+          "text": "Analiso a solução para compreender como o problema foi resolvido.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Leio a solução para compreender como o problema foi resolvido.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Observo a resposta final e apenas algumas partes da explicação.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Utilizo a resposta sem procurar entender como ela foi obtida.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-7",
+      "category": "Dependência emocional e comportamental",
+      "question": "Quando você precisa tomar uma decisão ou resolver um problema, com que frequência sente necessidade de consultar a IA antes de decidir?",
+      "alternates": [
+        {
+          "text": "Raramente. Costumo analisar a situação por conta própria.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Às vezes, principalmente quando tenho dúvidas.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Frequentemente, mesmo quando consigo analisar a situação sozinho.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Quase sempre. Tenho dificuldade para decidir sem consultar a IA.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-8",
+      "category": "Dependência emocional e comportamental",
+      "question": "Quando a IA não está disponível ou não consegue responder à sua pergunta, o que você faz?",
+      "alternates": [
+        {
+          "text": "Procuro outras fontes ou tento encontrar uma solução sozinho.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Tento resolver o problema, embora possa demorar mais.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Fico bastante frustrado e tenho dificuldade para continuar.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Geralmente abandono a tarefa ou espero até conseguir utilizar a IA novamente.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-9",
+      "category": "Dependência emocional e comportamental",
+      "question": "Você já deixou de tentar resolver alguma atividade sozinho porque acreditou que a IA conseguiria fazer melhor ou mais rapidamente?",
+      "alternates": [
+        {
+          "text": "Raramente ou nunca.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Às vezes, principalmente em tarefas repetitivas.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Frequentemente, inclusive em tarefas que eu poderia realizar sozinho.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Quase sempre. Prefiro deixar que a IA resolva as coisas por mim.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-10",
+      "category": "Pensamento crítico e confiança nas respostas",
+      "question": "Quando a IA apresenta uma informação ou resposta, como você costuma agir?",
+      "alternates": [
+        {
+          "text": "Analiso a resposta e verifico informações importantes em fontes confiáveis.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Avalio se a resposta faz sentido, mas nem sempre verifico as fontes.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Geralmente aceito a resposta quando ela parece convincente.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Costumo confiar na resposta sem questioná-la.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-11",
+      "category": "Pensamento crítico e confiança nas respostas",
+      "question": "Se a resposta da IA for diferente do que você aprendeu ou do que acredita estar correto, o que você faz?",
+      "alternates": [
+        {
+          "text": "Investigo a divergência e procuro descobrir qual informação está correta.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Questiono a IA e peço uma explicação.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Fico em dúvida, mas geralmente acabo aceitando a resposta da IA.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Presumo que a IA esteja certa, mesmo sem verificar.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-12",
+      "category": "Pensamento crítico e confiança nas respostas",
+      "question": "Quando você utiliza um texto, código ou trabalho produzido pela IA, como costuma proceder?",
+      "alternates": [
+        {
+          "text": "Reviso o conteúdo, verifico se está correto e faço as adaptações necessárias.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Leio o conteúdo e faço algumas alterações antes de utilizá-lo.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Faço poucas verificações e utilizo boa parte do resultado original.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Utilizo o resultado praticamente como foi produzido, sem verificar se está correto.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-13",
+      "category": "Uso consciente e responsabilidade",
+      "question": "Quando você decide utilizar a IA para realizar uma tarefa, qual costuma ser seu principal objetivo?",
+      "alternates": [
+        {
+          "text": "Aprender, esclarecer dúvidas, explorar ideias ou melhorar um trabalho que estou desenvolvendo.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Facilitar algumas etapas da tarefa, mantendo minha participação no processo.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Conseguir respostas rapidamente, mesmo que eu não compreenda completamente o resultado.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Evitar ter que pensar ou realizar a tarefa por conta própria.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-14",
+      "category": "Uso consciente e responsabilidade",
+      "question": "Com que frequência você utiliza a IA em tarefas que conseguiria realizar sozinho e que seriam importantes para desenvolver suas habilidades?",
+      "alternates": [
+        {
+          "text": "Raramente. Tento realizar essas tarefas por conta própria.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Às vezes, mas procuro participar ativamente do processo.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Frequentemente, mesmo quando poderia aproveitar a oportunidade para aprender.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Quase sempre. Prefiro deixar essas tarefas para a IA.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-15",
+      "category": "Uso consciente e responsabilidade",
+      "question": "Quando precisa produzir algo que será avaliado, como um trabalho acadêmico ou um projeto de programação, qual alternativa melhor representa seu comportamento?",
+      "alternates": [
+        {
+          "text": "Desenvolvo minhas próprias ideias e utilizo a IA como apoio, revisando e compreendendo o resultado.",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "Utilizo a IA para desenvolver partes do trabalho, mas procuro compreender e revisar o que será entregue.",
+          "letter": "B",
+          "points": 3
+        },
+        {
+          "text": "Dependo bastante do conteúdo gerado pela IA e tenho dificuldade para explicar algumas partes do resultado.",
+          "letter": "C",
+          "points": 5
+        },
+        {
+          "text": "Deixo a IA produzir a maior parte do trabalho e entrego o resultado sem compreender completamente como foi desenvolvido.",
+          "letter": "D",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "id": "form-16",
+      "category": "Disponibilidade",
+      "question": "Informe a sua disponibilidade para que possamos preparar uma rotina que se encaixe na sua.",
+      "alternates": [
+        {
+          "text": "Pela manhã",
+          "letter": "A",
+          "points": 0
+        },
+        {
+          "text": "À tarde",
+          "letter": "B",
+          "points": 0
+        },
+        {
+          "text": "À noite",
+          "letter": "C",
+          "points": 0
+        },
+        {
+          "text": "Qualquer horário",
+          "letter": "D",
+          "points": 0
+        }
+      ]
+    }
+  ],
+  "exercises": {
+    "critical": [
+      {
+        "id": "critical-1",
+        "day": 1,
+        "category": "Raciocínio lógico",
+        "tip": "Pense em qual padrão numérico está sendo seguido.",
+        "question": "Qual número completa a sequência: 2, 4, 6, 8, ...?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "9"
+          },
+          {
+            "letter": "B",
+            "text": "10"
+          },
+          {
+            "letter": "C",
+            "text": "12"
+          }
+        ],
+        "correct_awnser": "B"
+      },
+      {
+        "id": "critical-2",
+        "day": 1,
+        "category": "Raciocínio lógico",
+        "tip": "Leia atentamente a questão e analise as informações fornecidas.",
+        "question": "Qual afirmação descreve um uso consciente da IA?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Conferir a resposta e tentar compreender o raciocínio."
+          },
+          {
+            "letter": "B",
+            "text": "Copiar toda resposta sem revisar."
+          },
+          {
+            "letter": "C",
+            "text": "Usar a IA como única fonte em qualquer situação."
+          }
+        ],
+        "correct_awnser": "A"
+      },
+      {
+        "id": "critical-3",
+        "day": 1,
+        "category": "Raciocínio lógico",
+        "tip": "Analise a situação e considere as consequências de cada ação.",
+        "question": "Em uma fila, Pedro está antes de Ana. Ana está antes de Lucas. Marina está depois de Lucas. Quem está na segunda posição?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Pedro"
+          },
+          {
+            "letter": "B",
+            "text": "Ana"
+          },
+          {
+            "letter": "C",
+            "text": "Lucas"
+          }
+        ],
+        "correct_awnser": "B"
+      },
+      {
+        "id": "critical-4",
+        "day": 1,
+        "category": "Memória e foco",
+        "tip": "Observe os detalhes de cada opção antes de escolher.",
+        "question": "Uma pessoa recebeu uma mensagem com o seguinte endereço: contato@empresa.com. Qual alternativa apresenta exatamente o mesmo endereço?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "contato@empresa.com"
+          },
+          {
+            "letter": "B",
+            "text": "contato@empressa.com"
+          },
+          {
+            "letter": "C",
+            "text": "contato@empresa.com.br"
+          }
+        ],
+        "correct_awnser": "A"
+      },
+      {
+        "id": "critical-5",
+        "day": 1,
+        "category": "Memória e foco",
+        "tip": "Identifique o elemento que não segue o mesmo padrão.",
+        "question": "Observe a sequência: segunda-feira, terça-feira, quarta-feira, sábado, sexta-feira. Qual elemento interrompe a ordem dos dias da semana?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Quarta-feira."
+          },
+          {
+            "letter": "B",
+            "text": "Sábado."
+          },
+          {
+            "letter": "C",
+            "text": "Sexta-feira."
+          }
+        ],
+        "correct_awnser": "B"
+      },
+      {
+        "id": "critical-6",
+        "day": 1,
+        "category": "Memória e foco",
+        "tip": "Leia as informações com atenção e encontre a diferença.",
+        "question": "Um formulário solicita nome, e-mail e telefone. Uma pessoa preencheu nome e telefone, mas deixou o e-mail vazio. Qual informação está faltando?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "O número de telefone."
+          },
+          {
+            "letter": "B",
+            "text": "O nome completo."
+          },
+          {
+            "letter": "C",
+            "text": "O endereço de e-mail."
+          }
+        ],
+        "correct_awnser": "C"
+      },
+      {
+        "id": "critical-7",
+        "day": 1,
+        "category": "Pensamento crítico",
+        "tip": "Não confunda uma opinião convincente com uma informação comprovada.",
+        "question": "Uma publicação afirma que estudar ouvindo música sempre melhora o desempenho. Qual atitude demonstra pensamento crítico?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Aceitar a afirmação porque muitas pessoas compartilharam."
+          },
+          {
+            "letter": "B",
+            "text": "Investigar as evidências e considerar que os resultados podem variar."
+          },
+          {
+            "letter": "C",
+            "text": "Rejeitar a afirmação sem procurar informações."
+          }
+        ],
+        "correct_awnser": "B"
+      },
+      {
+        "id": "critical-8",
+        "day": 1,
+        "category": "Pensamento crítico",
+        "tip": "Considere a confiabilidade da fonte antes de aceitar uma informação.",
+        "question": "Você encontra duas notícias sobre o mesmo acontecimento, mas elas apresentam informações diferentes. O que deve fazer?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Escolher a notícia com o título mais convincente."
+          },
+          {
+            "letter": "B",
+            "text": "Compartilhar as duas para que outras pessoas decidam."
+          },
+          {
+            "letter": "C",
+            "text": "Verificar as fontes e procurar informações em outros veículos confiáveis."
+          }
+        ],
+        "correct_awnser": "C"
+      },
+      {
+        "id": "critical-9",
+        "day": 1,
+        "category": "Pensamento crítico",
+        "tip": "Analise se a conclusão realmente é sustentada pelas informações.",
+        "question": "Uma pessoa diz que um aplicativo é seguro porque nunca teve problemas ao utilizá-lo. Qual é a principal falha nesse argumento?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Uma experiência individual não comprova a segurança para todos."
+          },
+          {
+            "letter": "B",
+            "text": "A segurança de um aplicativo depende apenas da opinião dos usuários."
+          },
+          {
+            "letter": "C",
+            "text": "Um aplicativo só pode ser seguro quando não possui atualizações."
+          }
+        ],
+        "correct_awnser": "A"
+      },
+      {
+        "id": "critical-10",
+        "day": 1,
+        "category": "Resolução de problemas",
+        "tip": "Identifique a causa antes de escolher uma solução.",
+        "question": "Seu computador está muito lento. Você percebe que vários programas estão abertos ao mesmo tempo. Qual seria uma primeira tentativa razoável?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Apagar todos os arquivos pessoais imediatamente."
+          },
+          {
+            "letter": "B",
+            "text": "Fechar os programas que não estão sendo utilizados e verificar o desempenho."
+          },
+          {
+            "letter": "C",
+            "text": "Instalar vários programas para tentar acelerar o computador."
+          }
+        ],
+        "correct_awnser": "B"
+      },
+      {
+        "id": "critical-11",
+        "day": 1,
+        "category": "Resolução de problemas",
+        "tip": "Divida o problema em partes menores para facilitar a solução.",
+        "question": "Você precisa entregar um trabalho extenso amanhã e ainda não começou. Qual estratégia tende a ser mais eficiente?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Começar pela parte mais fácil e ignorar o restante."
+          },
+          {
+            "letter": "B",
+            "text": "Esperar até ter uma ideia perfeita de como fazer tudo."
+          },
+          {
+            "letter": "C",
+            "text": "Separar o trabalho em etapas, definir prioridades e acompanhar o tempo disponível."
+          }
+        ],
+        "correct_awnser": "C"
+      },
+      {
+        "id": "critical-12",
+        "day": 1,
+        "category": "Resolução de problemas",
+        "tip": "Procure uma solução que resolva a causa sem criar novos problemas.",
+        "question": "Uma equipe percebe que as mesmas tarefas estão sendo feitas duas vezes por falta de comunicação. Qual medida pode ajudar a resolver isso?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Definir responsáveis e registrar o andamento das tarefas em um local compartilhado."
+          },
+          {
+            "letter": "B",
+            "text": "Permitir que todos continuem fazendo as tarefas sem combinar entre si."
+          },
+          {
+            "letter": "C",
+            "text": "Diminuir a quantidade de reuniões sem mudar a organização."
+          }
+        ],
+        "correct_awnser": "A"
+      },
+      {
+        "id": "critical-13",
+        "day": 2,
+        "category": "Raciocínio lógico",
+        "tip": "Organize as relações na ordem indicada pelo enunciado.",
+        "question": "Carla chegou antes de Bruno. Diego chegou depois de Bruno, mas antes de Elisa. Quem chegou em terceiro lugar?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Bruno"
+          },
+          {
+            "letter": "B",
+            "text": "Diego"
+          },
+          {
+            "letter": "C",
+            "text": "Elisa"
+          }
+        ],
+        "correct_awnser": "B"
+      },
+      {
+        "id": "critical-14",
+        "day": 2,
+        "category": "Raciocínio lógico",
+        "tip": "Use a relação de causa e consequência apresentada.",
+        "question": "Sempre que o alarme é ativado, uma luz vermelha acende. A luz vermelha está apagada. O que podemos concluir, considerando essa regra?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "O alarme foi ativado, mas a luz falhou."
+          },
+          {
+            "letter": "B",
+            "text": "A luz vermelha não está relacionada ao alarme."
+          },
+          {
+            "letter": "C",
+            "text": "O alarme não foi ativado."
+          }
+        ],
+        "correct_awnser": "C"
+      },
+      {
+        "id": "critical-15",
+        "day": 2,
+        "category": "Raciocínio lógico",
+        "tip": "Observe o padrão entre as posições e não apenas os elementos isolados.",
+        "question": "Em uma competição, Júlia ficou à frente de Marcos, e Marcos ficou à frente de Sofia. Rafael ficou atrás de Sofia. Quem ficou em primeiro lugar entre essas quatro pessoas?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Júlia"
+          },
+          {
+            "letter": "B",
+            "text": "Marcos"
+          },
+          {
+            "letter": "C",
+            "text": "Sofia"
+          }
+        ],
+        "correct_awnser": "A"
+      },
+      {
+        "id": "critical-16",
+        "day": 2,
+        "category": "Memória e foco",
+        "tip": "Observe cuidadosamente as diferenças entre os elementos.",
+        "question": "Qual alternativa apresenta uma palavra diferente das demais por não pertencer ao mesmo grupo?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Caderno."
+          },
+          {
+            "letter": "B",
+            "text": "Caneta."
+          },
+          {
+            "letter": "C",
+            "text": "Geladeira."
+          }
+        ],
+        "correct_awnser": "C"
+      },
+      {
+        "id": "critical-17",
+        "day": 2,
+        "category": "Memória e foco",
+        "tip": "Identifique a informação que está fora do padrão.",
+        "question": "Um cadastro apresenta os seguintes horários: 08:00, 09:00, 10:00, 12:30 e 11:00. Qual horário não segue a sequência de intervalos de uma hora?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "10:00."
+          },
+          {
+            "letter": "B",
+            "text": "12:30."
+          },
+          {
+            "letter": "C",
+            "text": "11:00."
+          }
+        ],
+        "correct_awnser": "B"
+      },
+      {
+        "id": "critical-18",
+        "day": 2,
+        "category": "Memória e foco",
+        "tip": "Preste atenção nas instruções e identifique o que precisa ser feito.",
+        "question": "Uma tarefa solicita que sejam selecionados apenas os arquivos PDF de uma pasta. Qual arquivo deve ser selecionado?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "relatorio.docx"
+          },
+          {
+            "letter": "B",
+            "text": "imagem.png"
+          },
+          {
+            "letter": "C",
+            "text": "documento.pdf"
+          }
+        ],
+        "correct_awnser": "C"
+      },
+      {
+        "id": "critical-19",
+        "day": 2,
+        "category": "Pensamento crítico",
+        "tip": "Questione generalizações e procure considerar diferentes possibilidades.",
+        "question": "Uma pessoa afirma que todos os estudantes que usam IA deixam de aprender. Qual análise é mais adequada?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "A afirmação é verdadeira porque a IA fornece respostas prontas."
+          },
+          {
+            "letter": "B",
+            "text": "A afirmação é generalizada e não considera como cada estudante utiliza a ferramenta."
+          },
+          {
+            "letter": "C",
+            "text": "A afirmação é falsa porque qualquer uso de IA melhora o aprendizado."
+          }
+        ],
+        "correct_awnser": "B"
+      },
+      {
+        "id": "critical-20",
+        "day": 2,
+        "category": "Pensamento crítico",
+        "tip": "Diferencie fatos, interpretações e opiniões.",
+        "question": "Em uma avaliação, alguém afirma que um funcionário é incompetente apenas porque ele cometeu um erro. O que falta nessa avaliação?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Considerar somente a opinião de quem observou o erro."
+          },
+          {
+            "letter": "B",
+            "text": "Ignorar o erro e avaliar apenas a experiência profissional."
+          },
+          {
+            "letter": "C",
+            "text": "Analisar o contexto, a frequência dos erros e o desempenho geral."
+          }
+        ],
+        "correct_awnser": "C"
+      },
+      {
+        "id": "critical-21",
+        "day": 2,
+        "category": "Pensamento crítico",
+        "tip": "Avalie se a informação apresentada é suficiente para justificar a conclusão.",
+        "question": "Uma loja anuncia que seu produto é o mais vendido da cidade, mas não apresenta dados. Qual informação ajudaria a verificar essa afirmação?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Dados de vendas comparáveis, com período e critérios definidos."
+          },
+          {
+            "letter": "B",
+            "text": "Comentários positivos publicados nas redes sociais da loja."
+          },
+          {
+            "letter": "C",
+            "text": "A opinião dos funcionários sobre a qualidade do produto."
+          }
+        ],
+        "correct_awnser": "A"
+      },
+      {
+        "id": "critical-22",
+        "day": 2,
+        "category": "Resolução de problemas",
+        "tip": "Pense em uma solução que permita identificar onde está a falha.",
+        "question": "Um formulário online não está enviando as respostas. Qual é a melhor primeira ação para investigar o problema?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Refazer todo o formulário sem verificar o funcionamento atual."
+          },
+          {
+            "letter": "B",
+            "text": "Testar o envio, observar mensagens de erro e verificar os campos obrigatórios."
+          },
+          {
+            "letter": "C",
+            "text": "Remover todos os campos para tentar fazer o envio funcionar."
+          }
+        ],
+        "correct_awnser": "B"
+      },
+      {
+        "id": "critical-23",
+        "day": 2,
+        "category": "Resolução de problemas",
+        "tip": "Considere as necessidades envolvidas antes de escolher uma alternativa.",
+        "question": "Uma equipe precisa organizar reuniões, mas seus integrantes possuem horários diferentes. Qual solução atende melhor ao problema?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Marcar todas as reuniões no horário mais conveniente para o líder."
+          },
+          {
+            "letter": "B",
+            "text": "Cancelar as reuniões e deixar cada integrante decidir sozinho."
+          },
+          {
+            "letter": "C",
+            "text": "Consultar a disponibilidade de todos e escolher um horário compatível."
+          }
+        ],
+        "correct_awnser": "C"
+      },
+      {
+        "id": "critical-24",
+        "day": 2,
+        "category": "Resolução de problemas",
+        "tip": "Identifique o que está impedindo o objetivo e escolha uma ação prática.",
+        "question": "Você precisa estudar, mas recebe notificações constantemente e perde a concentração. Qual ação pode ajudar mais?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Silenciar as notificações durante um período reservado ao estudo."
+          },
+          {
+            "letter": "B",
+            "text": "Continuar respondendo às mensagens entre cada parágrafo."
+          },
+          {
+            "letter": "C",
+            "text": "Deixar todas as mensagens abertas para não esquecer de respondê-las."
+          }
+        ],
+        "correct_awnser": "A"
+      }
+    ],
+    "attention": [
+      {
+        "id": "attention-1",
+        "day": 1,
+        "category": "Raciocínio lógico",
+        "tip": "Organize as informações e descubra a relação entre as posições.",
+        "question": "Quatro pessoas participaram de uma apresentação. Laura apresentou antes de Pedro. Pedro apresentou depois de Camila. Bruno apresentou depois de Laura, mas antes de Camila. Qual foi a ordem correta?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Laura, Bruno, Camila e Pedro."
+          },
+          {
+            "letter": "B",
+            "text": "Bruno, Laura, Pedro e Camila."
+          },
+          {
+            "letter": "C",
+            "text": "Laura, Bruno, Camila e Pedro."
+          }
+        ],
+        "correct_awnser": "C"
+      },
+      {
+        "id": "attention-2",
+        "day": 1,
+        "category": "Raciocínio lógico",
+        "tip": "Use as condições apresentadas para eliminar possibilidades.",
+        "question": "Um projeto só pode ser publicado depois de passar pela revisão. A revisão só acontece quando o desenvolvimento termina. O projeto ainda não passou pela revisão. Qual conclusão é necessariamente verdadeira?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "O projeto ainda não pode ser publicado."
+          },
+          {
+            "letter": "B",
+            "text": "O desenvolvimento já foi concluído."
+          },
+          {
+            "letter": "C",
+            "text": "A revisão foi realizada, mas não foi aprovada."
+          }
+        ],
+        "correct_awnser": "A"
+      },
+      {
+        "id": "attention-3",
+        "day": 1,
+        "category": "Raciocínio lógico",
+        "tip": "Observe como as características se relacionam entre os grupos.",
+        "question": "Em uma equipe, todos os analistas conhecem SQL. Alguns profissionais que conhecem SQL também trabalham com Java. Qual afirmação é necessariamente verdadeira?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Todos os profissionais que conhecem SQL são analistas."
+          },
+          {
+            "letter": "B",
+            "text": "Todos os analistas conhecem SQL."
+          },
+          {
+            "letter": "C",
+            "text": "Todos os analistas também trabalham com Java."
+          }
+        ],
+        "correct_awnser": "B"
+      },
+      {
+        "id": "attention-4",
+        "day": 1,
+        "category": "Memória e foco",
+        "tip": "Compare as informações e identifique a inconsistência.",
+        "question": "Uma equipe recebeu três solicitações: a primeira exige prioridade alta e prazo para terça-feira; a segunda exige prioridade média e prazo para quarta-feira; a terceira exige prioridade alta e prazo para segunda-feira. Qual solicitação deve ser analisada primeiro considerando prioridade e prazo?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "A primeira, por possuir prioridade alta."
+          },
+          {
+            "letter": "B",
+            "text": "A terceira, por possuir prioridade alta e prazo mais próximo."
+          },
+          {
+            "letter": "C",
+            "text": "A segunda, por possuir um prazo intermediário."
+          }
+        ],
+        "correct_awnser": "B"
+      },
+      {
+        "id": "attention-5",
+        "day": 1,
+        "category": "Memória e foco",
+        "tip": "Observe as relações entre os elementos para identificar o padrão.",
+        "question": "Em uma lista de tarefas, cada atividade deve ser seguida por sua respectiva responsável: cadastro — Ana; testes — Bruno; documentação — Carla. Qual alternativa apresenta uma associação incorreta?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Testes — Carla."
+          },
+          {
+            "letter": "B",
+            "text": "Cadastro — Ana."
+          },
+          {
+            "letter": "C",
+            "text": "Documentação — Carla."
+          }
+        ],
+        "correct_awnser": "A"
+      },
+      {
+        "id": "attention-6",
+        "day": 1,
+        "category": "Memória e foco",
+        "tip": "Analise todas as informações antes de identificar o problema.",
+        "question": "Um estudante precisa entregar três atividades: um relatório em PDF, uma apresentação em slides e uma planilha. Ao conferir a pasta, encontra relatório.pdf, apresentação.pptx e relatório.xlsx. Qual arquivo provavelmente não corresponde ao formato solicitado para a planilha?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "relatório.pdf."
+          },
+          {
+            "letter": "B",
+            "text": "relatório.xlsx."
+          },
+          {
+            "letter": "C",
+            "text": "apresentação.pptx."
+          }
+        ],
+        "correct_awnser": "A"
+      },
+      {
+        "id": "attention-7",
+        "day": 1,
+        "category": "Pensamento crítico",
+        "tip": "Analise se a conclusão apresentada possui evidências suficientes.",
+        "question": "Uma pesquisa realizada com 15 pessoas de uma única turma concluiu que todos os universitários preferem aulas online. Qual é o principal problema dessa conclusão?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "A pesquisa utilizou perguntas que não podem ser respondidas por estudantes."
+          },
+          {
+            "letter": "B",
+            "text": "A conclusão generaliza um resultado obtido em um grupo muito limitado."
+          },
+          {
+            "letter": "C",
+            "text": "A pesquisa deveria considerar somente estudantes que preferem aulas presenciais."
+          }
+        ],
+        "correct_awnser": "B"
+      },
+      {
+        "id": "attention-8",
+        "day": 1,
+        "category": "Pensamento crítico",
+        "tip": "Diferencie uma informação comprovada de uma interpretação pessoal.",
+        "question": "Um colega afirma que uma ferramenta de IA é confiável porque apresentou respostas corretas em três testes. Qual seria a análise mais adequada?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Os testes são suficientes para comprovar que a ferramenta sempre fornece respostas corretas."
+          },
+          {
+            "letter": "B",
+            "text": "A ferramenta não deve ser utilizada porque qualquer IA pode cometer erros."
+          },
+          {
+            "letter": "C",
+            "text": "Os resultados são um indicativo positivo, mas é necessário avaliar outros casos e verificar as informações."
+          }
+        ],
+        "correct_awnser": "C"
+      },
+      {
+        "id": "attention-9",
+        "day": 1,
+        "category": "Pensamento crítico",
+        "tip": "Considere os possíveis interesses por trás de uma informação.",
+        "question": "Um influenciador recomenda um curso e afirma que ele é o melhor do mercado. Depois, você descobre que ele recebe comissão pelas matrículas. O que isso significa?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "A recomendação pode ter um interesse comercial e deve ser avaliada com atenção."
+          },
+          {
+            "letter": "B",
+            "text": "A recomendação é necessariamente falsa por existir uma comissão."
+          },
+          {
+            "letter": "C",
+            "text": "A comissão comprova que o curso possui qualidade superior aos concorrentes."
+          }
+        ],
+        "correct_awnser": "A"
+      },
+      {
+        "id": "attention-10",
+        "day": 1,
+        "category": "Resolução de problemas",
+        "tip": "Investigue as possíveis causas antes de escolher uma solução.",
+        "question": "Uma equipe percebe que os erros em um sistema aumentaram depois de uma atualização. O que seria mais adequado fazer primeiro?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Reescrever todo o sistema para evitar novos erros."
+          },
+          {
+            "letter": "B",
+            "text": "Identificar quais funcionalidades foram alteradas e comparar os erros com a versão anterior."
+          },
+          {
+            "letter": "C",
+            "text": "Desativar todas as funcionalidades que apresentaram qualquer instabilidade."
+          }
+        ],
+        "correct_awnser": "B"
+      },
+      {
+        "id": "attention-11",
+        "day": 1,
+        "category": "Resolução de problemas",
+        "tip": "Considere as dependências entre as tarefas antes de definir a ordem.",
+        "question": "Uma equipe precisa criar um site. Primeiro, deve definir o conteúdo; depois, desenvolver as páginas; por último, testar o funcionamento. O conteúdo ainda não foi definido. Qual ação deve ser priorizada?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Começar os testes para identificar problemas antes do desenvolvimento."
+          },
+          {
+            "letter": "B",
+            "text": "Desenvolver todas as páginas e decidir o conteúdo depois."
+          },
+          {
+            "letter": "C",
+            "text": "Organizar e definir o conteúdo que será utilizado nas páginas."
+          }
+        ],
+        "correct_awnser": "C"
+      },
+      {
+        "id": "attention-12",
+        "day": 1,
+        "category": "Resolução de problemas",
+        "tip": "Avalie as consequências de cada alternativa antes de decidir.",
+        "question": "Uma estudante percebe que não consegue acompanhar as aulas porque tenta anotar tudo o que o professor fala. Qual estratégia pode melhorar sua situação?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Registrar os conceitos principais e complementar as anotações depois da aula."
+          },
+          {
+            "letter": "B",
+            "text": "Parar de fazer anotações e confiar exclusivamente na memória."
+          },
+          {
+            "letter": "C",
+            "text": "Gravar todas as aulas e deixar de acompanhar as explicações."
+          }
+        ],
+        "correct_awnser": "A"
+      },
+      {
+        "id": "attention-13",
+        "day": 2,
+        "category": "Raciocínio lógico",
+        "tip": "Relacione todas as condições para descobrir o que pode ser concluído.",
+        "question": "Uma empresa possui três equipes: desenvolvimento, suporte e testes. Todos os integrantes de desenvolvimento conhecem programação. Nenhum integrante de suporte participa da criação de funcionalidades. Alguns integrantes de testes também conhecem programação. Qual afirmação é necessariamente verdadeira?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Todos os profissionais que conhecem programação trabalham em desenvolvimento."
+          },
+          {
+            "letter": "B",
+            "text": "Nenhum profissional de suporte conhece programação."
+          },
+          {
+            "letter": "C",
+            "text": "Todos os integrantes de desenvolvimento conhecem programação."
+          }
+        ],
+        "correct_awnser": "C"
+      },
+      {
+        "id": "attention-14",
+        "day": 2,
+        "category": "Raciocínio lógico",
+        "tip": "Observe as condições que precisam ser atendidas simultaneamente.",
+        "question": "Para participar de um evento, uma pessoa precisa estar inscrita e apresentar um documento. Júlia está inscrita, mas esqueceu o documento. O que podemos concluir?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Júlia poderá participar porque já realizou a inscrição."
+          },
+          {
+            "letter": "B",
+            "text": "Júlia ainda não atende a todas as condições para participar."
+          },
+          {
+            "letter": "C",
+            "text": "Júlia perdeu definitivamente sua inscrição."
+          }
+        ],
+        "correct_awnser": "B"
+      },
+      {
+        "id": "attention-15",
+        "day": 2,
+        "category": "Raciocínio lógico",
+        "tip": "Compare as informações e identifique qual alternativa respeita todas as regras.",
+        "question": "Uma senha precisa ter exatamente quatro caracteres. O primeiro deve ser uma letra, o segundo um número, o terceiro uma letra diferente da primeira e o quarto um número diferente do segundo. Qual opção atende às regras?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "A2B5"
+          },
+          {
+            "letter": "B",
+            "text": "A2A5"
+          },
+          {
+            "letter": "C",
+            "text": "A2B2"
+          }
+        ],
+        "correct_awnser": "A"
+      },
+      {
+        "id": "attention-16",
+        "day": 2,
+        "category": "Memória e foco",
+        "tip": "Observe os detalhes e compare as informações apresentadas.",
+        "question": "Um sistema apresenta quatro registros: Ana — 18 anos; Bruno — 21 anos; Carla — 19 anos; Diego — 21 anos. Se a tarefa pede encontrar pessoas com a mesma idade, qual grupo atende ao critério?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Ana e Carla."
+          },
+          {
+            "letter": "B",
+            "text": "Bruno e Diego."
+          },
+          {
+            "letter": "C",
+            "text": "Carla e Diego."
+          }
+        ],
+        "correct_awnser": "B"
+      },
+      {
+        "id": "attention-17",
+        "day": 2,
+        "category": "Memória e foco",
+        "tip": "Identifique a informação que não combina com as demais.",
+        "question": "Uma equipe organiza documentos por categoria: contratos, notas fiscais, recibos e relatórios médicos. Se a pasta é destinada exclusivamente a documentos financeiros, qual item deve ser separado?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Notas fiscais."
+          },
+          {
+            "letter": "B",
+            "text": "Recibos."
+          },
+          {
+            "letter": "C",
+            "text": "Relatórios médicos."
+          }
+        ],
+        "correct_awnser": "C"
+      },
+      {
+        "id": "attention-18",
+        "day": 2,
+        "category": "Memória e foco",
+        "tip": "Leia as condições com atenção e verifique qual alternativa atende a todas elas.",
+        "question": "Uma pessoa precisa selecionar um arquivo que seja uma imagem, tenha extensão PNG e pertença à pasta chamada 'Projetos'. Qual opção atende a todos os critérios?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Projetos/foto.png."
+          },
+          {
+            "letter": "B",
+            "text": "Downloads/foto.png."
+          },
+          {
+            "letter": "C",
+            "text": "Projetos/documento.pdf."
+          }
+        ],
+        "correct_awnser": "A"
+      },
+      {
+        "id": "attention-19",
+        "day": 2,
+        "category": "Pensamento crítico",
+        "tip": "Investigue se existe uma relação de causa e efeito ou apenas uma coincidência.",
+        "question": "Uma escola percebeu que as notas aumentaram depois que os estudantes começaram a utilizar uma nova plataforma. Qual informação ajudaria a avaliar se a plataforma realmente contribuiu para o resultado?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "A quantidade de estudantes que gostaram da aparência da plataforma."
+          },
+          {
+            "letter": "B",
+            "text": "O número de acessos registrados durante o período de utilização."
+          },
+          {
+            "letter": "C",
+            "text": "A comparação dos resultados com outros fatores que também mudaram durante o período."
+          }
+        ],
+        "correct_awnser": "C"
+      },
+      {
+        "id": "attention-20",
+        "day": 2,
+        "category": "Pensamento crítico",
+        "tip": "Não aceite uma conclusão apenas porque ela parece coerente com sua expectativa.",
+        "question": "Uma IA apresenta uma explicação convincente sobre um assunto que você não conhece. Qual atitude demonstra melhor autonomia e pensamento crítico?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Verificar os pontos principais em fontes confiáveis e tentar compreender a explicação."
+          },
+          {
+            "letter": "B",
+            "text": "Aceitar a resposta porque a explicação foi apresentada com segurança."
+          },
+          {
+            "letter": "C",
+            "text": "Solicitar que a IA confirme a própria resposta até apresentar a mesma conclusão."
+          }
+        ],
+        "correct_awnser": "A"
+      },
+      {
+        "id": "attention-21",
+        "day": 2,
+        "category": "Pensamento crítico",
+        "tip": "Considere os critérios utilizados antes de comparar resultados.",
+        "question": "Um relatório afirma que o aplicativo X é melhor que o aplicativo Y porque possui mais usuários. Qual é a principal limitação dessa comparação?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "A quantidade de usuários não pode ser utilizada em nenhuma comparação."
+          },
+          {
+            "letter": "B",
+            "text": "A popularidade, sozinha, não demonstra que o aplicativo possui melhor qualidade."
+          },
+          {
+            "letter": "C",
+            "text": "O aplicativo com menos usuários necessariamente possui mais recursos."
+          }
+        ],
+        "correct_awnser": "B"
+      },
+      {
+        "id": "attention-22",
+        "day": 2,
+        "category": "Resolução de problemas",
+        "tip": "Investigue as dependências do problema antes de tentar corrigi-lo.",
+        "question": "Um sistema não consegue salvar os cadastros. A equipe verifica que a conexão com o banco de dados está funcionando, mas os campos enviados possuem nomes diferentes dos esperados pelo sistema. Qual deve ser a primeira ação?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Substituir o banco de dados por outro sem investigar a comunicação."
+          },
+          {
+            "letter": "B",
+            "text": "Remover todos os campos do formulário e criar um cadastro novo."
+          },
+          {
+            "letter": "C",
+            "text": "Verificar e corrigir a correspondência entre os campos enviados e os esperados."
+          }
+        ],
+        "correct_awnser": "C"
+      },
+      {
+        "id": "attention-23",
+        "day": 2,
+        "category": "Resolução de problemas",
+        "tip": "Considere os recursos disponíveis e as consequências de cada decisão.",
+        "question": "Uma equipe precisa entregar duas funcionalidades importantes, mas percebe que não terá tempo para concluir ambas com qualidade. Qual decisão é mais adequada?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Definir prioridades com base na importância, negociar o prazo ou o escopo e comunicar a decisão."
+          },
+          {
+            "letter": "B",
+            "text": "Tentar desenvolver as duas funcionalidades simultaneamente, mesmo sem conseguir testá-las."
+          },
+          {
+            "letter": "C",
+            "text": "Entregar somente a funcionalidade mais fácil sem informar os responsáveis."
+          }
+        ],
+        "correct_awnser": "A"
+      },
+      {
+        "id": "attention-24",
+        "day": 2,
+        "category": "Resolução de problemas",
+        "tip": "Compare as possíveis causas e escolha uma estratégia que permita testar sua hipótese.",
+        "question": "Um estudante percebe que esquece o conteúdo estudado poucos dias depois. Ele costuma estudar por muitas horas seguidas, sem pausas, e apenas reler os textos. Qual mudança pode ajudar a identificar uma estratégia de estudo mais eficiente?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Aumentar ainda mais o tempo de leitura sem alterar o método."
+          },
+          {
+            "letter": "B",
+            "text": "Experimentar sessões menores, pausas e exercícios de recuperação ativa, acompanhando os resultados."
+          },
+          {
+            "letter": "C",
+            "text": "Substituir todos os materiais por resumos prontos e evitar testar a própria lembrança."
+          }
+        ],
+        "correct_awnser": "B"
+      }
+    ],
+    "low-level": [
+      {
+        "id": "low-1",
+        "question": "Se todos os elementos do grupo A pertencem ao grupo B e X pertence a A, o que podemos concluir?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "X não pertence a B."
+          },
+          {
+            "letter": "B",
+            "text": "Todos os elementos de B pertencem a A."
+          },
+          {
+            "letter": "C",
+            "text": "X pertence a B."
+          }
+        ],
+        "correct_awnser": "C"
+      },
+      {
+        "id": "low-2",
+        "question": "Um estudo encontrou uma associação entre dois fatores. Isso, por si só, demonstra que um causa o outro?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Sim, qualquer associação demonstra causa."
+          },
+          {
+            "letter": "B",
+            "text": "Não, é necessário investigar outras explicações e evidências."
+          },
+          {
+            "letter": "C",
+            "text": "Sim, desde que os fatores ocorram ao mesmo tempo."
+          }
+        ],
+        "correct_awnser": "B"
+      },
+      {
+        "id": "low-3",
+        "day": 1,
+        "category": "Raciocínio lógico",
+        "tip": "Teste as condições em conjunto e elimine as opções incompatíveis.",
+        "question": "Uma equipe precisa escolher três integrantes entre cinco candidatos: Ana, Bruno, Caio, Diana e Eduardo. Ana e Bruno não podem participar juntos. Caio só pode participar se Diana também estiver na equipe. Eduardo precisa participar obrigatoriamente. Qual grupo é possível?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Ana, Bruno e Eduardo."
+          },
+          {
+            "letter": "B",
+            "text": "Caio, Bruno e Eduardo."
+          },
+          {
+            "letter": "C",
+            "text": "Caio, Diana e Eduardo."
+          }
+        ],
+        "correct_awnser": "C"
+      },
+      {
+        "id": "low-4",
+        "day": 1,
+        "category": "Memória e foco",
+        "tip": "Analise várias condições simultaneamente e elimine as opções incompatíveis.",
+        "question": "Uma equipe precisa revisar quatro tarefas. A tarefa A deve ser revisada antes da C. A tarefa B deve ser revisada depois da D. A tarefa C deve ser revisada antes da D. Qual ordem respeita todas as condições?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "A, C, D, B."
+          },
+          {
+            "letter": "B",
+            "text": "D, B, A, C."
+          },
+          {
+            "letter": "C",
+            "text": "A, D, C, B."
+          }
+        ],
+        "correct_awnser": "A"
+      },
+      {
+        "id": "low-5",
+        "day": 1,
+        "category": "Memória e foco",
+        "tip": "Compare os registros e encontre a combinação de informações inconsistente.",
+        "question": "Um sistema precisa identificar registros duplicados. Os registros possuem nome, e-mail e telefone. Qual par representa uma duplicidade mais evidente?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Marina, marina@email.com, 9999-1111 e Marina, marina@email.com, 9999-2222."
+          },
+          {
+            "letter": "B",
+            "text": "Lucas, lucas@email.com, 9999-3333 e Lucas, lucas@email.com, 9999-3333."
+          },
+          {
+            "letter": "C",
+            "text": "Pedro, pedro@email.com, 9999-4444 e Paulo, paulo@email.com, 9999-4444."
+          }
+        ],
+        "correct_awnser": "B"
+      },
+      {
+        "id": "low-6",
+        "day": 1,
+        "category": "Memória e foco",
+        "tip": "Considere todas as condições e identifique a única opção que atende a elas.",
+        "question": "Uma planilha precisa ser filtrada para exibir somente funcionários do setor de tecnologia, com status ativo e tempo de empresa superior a dois anos. Qual registro deve aparecer?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Rafael — Tecnologia — Ativo — 3 anos."
+          },
+          {
+            "letter": "B",
+            "text": "Marina — Financeiro — Ativo — 4 anos."
+          },
+          {
+            "letter": "C",
+            "text": "Lucas — Tecnologia — Inativo — 5 anos."
+          }
+        ],
+        "correct_awnser": "A"
+      },
+      {
+        "id": "low-7",
+        "day": 1,
+        "category": "Pensamento crítico",
+        "tip": "Identifique pressupostos escondidos e avalie se as evidências sustentam a conclusão.",
+        "question": "Uma empresa afirma que seus funcionários se tornaram mais produtivos após a implantação de uma ferramenta de IA. No mesmo período, a empresa reduziu a quantidade de reuniões e contratou novos profissionais. Qual análise é mais consistente?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "A ferramenta de IA foi responsável pelo aumento, pois a mudança aconteceu durante sua implantação."
+          },
+          {
+            "letter": "B",
+            "text": "A redução das reuniões foi a única causa possível, já que liberou tempo dos funcionários."
+          },
+          {
+            "letter": "C",
+            "text": "Não é possível atribuir o resultado exclusivamente à IA sem avaliar os efeitos das outras mudanças."
+          }
+        ],
+        "correct_awnser": "C"
+      },
+      {
+        "id": "low-8",
+        "day": 1,
+        "category": "Pensamento crítico",
+        "tip": "Examine a qualidade das fontes e a independência das evidências apresentadas.",
+        "question": "Um artigo afirma que determinado método de estudo é comprovadamente superior. Para sustentar a afirmação, apresenta cinco sites que publicaram a mesma notícia. Ao investigar, você descobre que todos reproduziram um único estudo financiado pela empresa que vende o método. Qual é a principal fragilidade dessa evidência?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "A quantidade de sites é suficiente para validar a conclusão, mesmo quando todos usam a mesma fonte."
+          },
+          {
+            "letter": "B",
+            "text": "As publicações não representam evidências independentes, e o financiamento pode influenciar a interpretação dos resultados."
+          },
+          {
+            "letter": "C",
+            "text": "Um estudo financiado por uma empresa deve ser descartado automaticamente, independentemente de sua metodologia."
+          }
+        ],
+        "correct_awnser": "B"
+      },
+      {
+        "id": "low-9",
+        "day": 1,
+        "category": "Pensamento crítico",
+        "tip": "Procure distinguir uma explicação possível de uma conclusão comprovada.",
+        "question": "Uma pesquisa mostra que estudantes que utilizam IA com frequência apresentam notas menores. Um pesquisador conclui que a IA prejudica o desempenho acadêmico. Qual informação seria mais importante investigar antes de aceitar essa conclusão?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Se os estudantes que já tinham dificuldades acadêmicas passaram a utilizar mais IA como apoio."
+          },
+          {
+            "letter": "B",
+            "text": "Se os estudantes consideram a interface da ferramenta fácil de utilizar."
+          },
+          {
+            "letter": "C",
+            "text": "Se a ferramenta utilizada possui mais funcionalidades que outras disponíveis."
+          }
+        ],
+        "correct_awnser": "A"
+      },
+      {
+        "id": "low-10",
+        "day": 1,
+        "category": "Resolução de problemas",
+        "tip": "Separe sintomas de causas e procure uma solução que evite a repetição do problema.",
+        "question": "Uma equipe percebe que os clientes estão recebendo relatórios com informações desatualizadas. Os dados são coletados corretamente, mas a atualização do relatório depende de uma tarefa manual que frequentemente é esquecida. Qual solução trata melhor a causa do problema?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Solicitar que os clientes confiram os dados antes de utilizar os relatórios."
+          },
+          {
+            "letter": "B",
+            "text": "Criar um processo automatizado de atualização e incluir uma verificação de execução."
+          },
+          {
+            "letter": "C",
+            "text": "Aumentar a frequência de coleta dos dados sem alterar a geração dos relatórios."
+          }
+        ],
+        "correct_awnser": "B"
+      },
+      {
+        "id": "low-11",
+        "day": 1,
+        "category": "Resolução de problemas",
+        "tip": "Organize as tarefas considerando suas dependências e os riscos envolvidos.",
+        "question": "Uma equipe precisa entregar um sistema com quatro etapas: levantamento de requisitos, desenvolvimento, testes e publicação. Os testes dependem da conclusão do desenvolvimento, e o desenvolvimento depende dos requisitos. A publicação só pode acontecer depois dos testes. Um problema nos requisitos foi identificado antes do início do desenvolvimento. Qual decisão evita retrabalho?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Iniciar o desenvolvimento e corrigir os requisitos somente depois dos primeiros testes."
+          },
+          {
+            "letter": "B",
+            "text": "Realizar a publicação de uma versão inicial e ajustar os requisitos posteriormente."
+          },
+          {
+            "letter": "C",
+            "text": "Corrigir e validar os requisitos antes de iniciar o desenvolvimento."
+          }
+        ],
+        "correct_awnser": "C"
+      },
+      {
+        "id": "low-12",
+        "day": 1,
+        "category": "Resolução de problemas",
+        "tip": "Avalie o impacto, a urgência e a possibilidade de reversão das decisões.",
+        "question": "Uma atualização de um aplicativo apresenta falhas para parte dos usuários. A equipe descobre que o problema está relacionado a uma nova funcionalidade, mas ainda não identificou todas as causas. Qual medida inicial é mais prudente?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Desativar temporariamente a funcionalidade afetada, monitorar o sistema e investigar a causa."
+          },
+          {
+            "letter": "B",
+            "text": "Manter a funcionalidade ativa até descobrir exatamente o que causou todas as falhas."
+          },
+          {
+            "letter": "C",
+            "text": "Remover permanentemente a funcionalidade e encerrar a investigação."
+          }
+        ],
+        "correct_awnser": "A"
+      },
+      {
+        "id": "low-13",
+        "day": 2,
+        "category": "Raciocínio lógico",
+        "tip": "Use as relações entre as pessoas para descobrir quais posições são possíveis.",
+        "question": "Quatro desenvolvedores, Lara, Miguel, Nina e Otávio, trabalham em uma fila de revisão. Lara está antes de Miguel. Nina está depois de Otávio. Miguel está antes de Otávio. Qual é a ordem correta?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Lara, Miguel, Otávio e Nina."
+          },
+          {
+            "letter": "B",
+            "text": "Otávio, Nina, Lara e Miguel."
+          },
+          {
+            "letter": "C",
+            "text": "Lara, Otávio, Miguel e Nina."
+          }
+        ],
+        "correct_awnser": "A"
+      },
+      {
+        "id": "low-14",
+        "day": 2,
+        "category": "Raciocínio lógico",
+        "tip": "Analise as implicações das regras sem confundir condição necessária com suficiente.",
+        "question": "Uma plataforma libera o acesso a uma área restrita somente quando o usuário está autenticado e possui autorização. Pedro está autenticado, mas não consegue acessar a área. Qual explicação é compatível com as regras?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Pedro possui autorização, mas a plataforma exige uma senha adicional não mencionada."
+          },
+          {
+            "letter": "B",
+            "text": "Pedro pode estar autenticado sem possuir a autorização necessária."
+          },
+          {
+            "letter": "C",
+            "text": "A autenticação é suficiente para liberar o acesso, portanto a plataforma está necessariamente com defeito."
+          }
+        ],
+        "correct_awnser": "B"
+      },
+      {
+        "id": "low-15",
+        "day": 2,
+        "category": "Raciocínio lógico",
+        "tip": "Identifique a regra que permanece válida em todas as situações apresentadas.",
+        "question": "Em um sistema, toda tarefa aprovada passa por uma revisão. Algumas tarefas revisadas são rejeitadas. Nenhuma tarefa rejeitada pode ser publicada. Qual conclusão é necessariamente verdadeira?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Toda tarefa revisada foi aprovada."
+          },
+          {
+            "letter": "B",
+            "text": "Algumas tarefas aprovadas foram rejeitadas."
+          },
+          {
+            "letter": "C",
+            "text": "Uma tarefa rejeitada não pode ser publicada."
+          }
+        ],
+        "correct_awnser": "C"
+      },
+      {
+        "id": "low-16",
+        "day": 2,
+        "category": "Memória e foco",
+        "tip": "Examine os detalhes de cada registro e encontre a única combinação incompatível.",
+        "question": "Um sistema exige que cada pedido tenha um identificador único, um cliente e um status válido: pendente, aprovado ou cancelado. Qual conjunto de registros apresenta um problema?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Pedido 101 — Ana — Pendente; Pedido 102 — Bruno — Aprovado."
+          },
+          {
+            "letter": "B",
+            "text": "Pedido 103 — Carla — Cancelado; Pedido 104 — Diego — Pendente."
+          },
+          {
+            "letter": "C",
+            "text": "Pedido 105 — Elisa — Aprovado; Pedido 105 — Felipe — Pendente."
+          }
+        ],
+        "correct_awnser": "C"
+      },
+      {
+        "id": "low-17",
+        "day": 2,
+        "category": "Memória e foco",
+        "tip": "Identifique as relações entre as informações e procure a única alternativa que atende aos critérios.",
+        "question": "Um relatório deve apresentar apenas projetos que estejam concluídos, tenham sido aprovados pelo responsável e possuam documentação anexada. Qual projeto deve ser incluído?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Projeto Alfa — Concluído — Aprovado — Sem documentação."
+          },
+          {
+            "letter": "B",
+            "text": "Projeto Beta — Concluído — Aprovado — Documentação anexada."
+          },
+          {
+            "letter": "C",
+            "text": "Projeto Gama — Em andamento — Aprovado — Documentação anexada."
+          }
+        ],
+        "correct_awnser": "B"
+      },
+      {
+        "id": "low-18",
+        "day": 2,
+        "category": "Memória e foco",
+        "tip": "Avalie diferentes critérios simultaneamente para encontrar a opção adequada.",
+        "question": "Uma equipe precisa localizar uma tarefa que esteja atrasada, tenha prioridade alta e ainda não tenha sido atribuída a nenhum integrante. Qual registro corresponde a essa situação?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Tarefa 1 — Atrasada — Prioridade média — Sem responsável."
+          },
+          {
+            "letter": "B",
+            "text": "Tarefa 2 — No prazo — Prioridade alta — Sem responsável."
+          },
+          {
+            "letter": "C",
+            "text": "Tarefa 3 — Atrasada — Prioridade alta — Sem responsável."
+          }
+        ],
+        "correct_awnser": "C"
+      },
+      {
+        "id": "low-19",
+        "day": 2,
+        "category": "Pensamento crítico",
+        "tip": "Avalie se o argumento apresenta evidências suficientes para sustentar sua conclusão.",
+        "question": "Um relatório afirma que uma empresa possui o melhor atendimento do setor porque recebeu a maior quantidade de avaliações positivas em uma plataforma. Entretanto, a empresa também possui muito mais clientes que seus concorrentes. Qual informação ajudaria a tornar a comparação mais justa?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Comparar a proporção de avaliações positivas em relação ao total de avaliações de cada empresa."
+          },
+          {
+            "letter": "B",
+            "text": "Comparar apenas a quantidade absoluta de avaliações positivas recebidas."
+          },
+          {
+            "letter": "C",
+            "text": "Considerar somente as avaliações publicadas durante o mês de maior movimento."
+          }
+        ],
+        "correct_awnser": "A"
+      },
+      {
+        "id": "low-20",
+        "day": 2,
+        "category": "Pensamento crítico",
+        "tip": "Observe como a forma de apresentar uma informação pode influenciar sua interpretação.",
+        "question": "Uma notícia destaca que um tratamento aumentou as chances de sucesso em 50%. Porém, não informa que a chance passou de 2% para 3%. Qual é o principal problema da apresentação?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "O percentual apresentado é necessariamente falso porque o aumento foi pequeno."
+          },
+          {
+            "letter": "B",
+            "text": "A apresentação destaca o aumento relativo sem mostrar os valores absolutos, podendo exagerar a percepção do benefício."
+          },
+          {
+            "letter": "C",
+            "text": "A informação seria mais confiável se apresentasse apenas o percentual de aumento, sem os valores iniciais."
+          }
+        ],
+        "correct_awnser": "B"
+      },
+      {
+        "id": "low-21",
+        "day": 2,
+        "category": "Pensamento crítico",
+        "tip": "Questione generalizações e procure explicações alternativas para os resultados.",
+        "question": "Um estudante utiliza uma IA para resolver todas as atividades e percebe que suas notas melhoraram. Ele conclui que não precisa mais estudar os conteúdos por conta própria. Qual é a falha principal desse raciocínio?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Uma melhora nas notas não pode acontecer quando existe auxílio tecnológico."
+          },
+          {
+            "letter": "B",
+            "text": "O uso de ferramentas digitais impede necessariamente o desenvolvimento de qualquer habilidade."
+          },
+          {
+            "letter": "C",
+            "text": "O resultado nas notas não demonstra, por si só, que o estudante compreendeu o conteúdo ou consegue resolver problemas sem auxílio."
+          }
+        ],
+        "correct_awnser": "C"
+      },
+      {
+        "id": "low-22",
+        "day": 2,
+        "category": "Resolução de problemas",
+        "tip": "Considere o impacto das falhas e a ordem mais segura para investigar suas causas.",
+        "question": "Após uma alteração no sistema, alguns usuários não conseguem acessar suas contas, enquanto outros continuam utilizando normalmente. A equipe ainda não sabe se o problema está relacionado ao navegador, à autenticação ou à atualização. Qual procedimento inicial é mais adequado?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Reinstalar o sistema para todos os usuários e verificar depois se o problema desapareceu."
+          },
+          {
+            "letter": "B",
+            "text": "Reproduzir o erro em diferentes condições, comparar os casos afetados e não afetados e analisar os registros de acesso."
+          },
+          {
+            "letter": "C",
+            "text": "Alterar imediatamente o mecanismo de autenticação, pois ele é uma das possíveis causas."
+          }
+        ],
+        "correct_awnser": "B"
+      },
+      {
+        "id": "low-23",
+        "day": 2,
+        "category": "Resolução de problemas",
+        "tip": "Priorize ações considerando dependências, recursos e possíveis impactos.",
+        "question": "Uma equipe precisa corrigir uma falha de segurança e desenvolver uma nova funcionalidade solicitada por clientes. A equipe é pequena, e a nova funcionalidade depende de uma parte do sistema que será modificada durante a correção. Qual planejamento é mais adequado?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Desenvolver primeiro a funcionalidade para atender aos clientes e corrigir a segurança na próxima versão."
+          },
+          {
+            "letter": "B",
+            "text": "Dividir a equipe igualmente entre as duas tarefas, independentemente das dependências."
+          },
+          {
+            "letter": "C",
+            "text": "Priorizar a correção de segurança, validar as alterações e depois desenvolver a funcionalidade considerando a nova estrutura."
+          }
+        ],
+        "correct_awnser": "C"
+      },
+      {
+        "id": "low-24",
+        "day": 2,
+        "category": "Resolução de problemas",
+        "tip": "Planeje uma solução que permita avaliar resultados e ajustar a estratégia quando necessário.",
+        "question": "Uma estudante percebe que depende da IA para iniciar qualquer atividade. Ela quer desenvolver autonomia, mas ainda precisa cumprir prazos acadêmicos. Qual estratégia equilibra melhor aprendizagem e responsabilidade?",
+        "alternates": [
+          {
+            "letter": "A",
+            "text": "Tentar resolver cada atividade inicialmente por conta própria, registrar as dúvidas e utilizar a IA depois para comparar soluções e compreender os erros."
+          },
+          {
+            "letter": "B",
+            "text": "Abandonar completamente qualquer ferramenta de IA, mesmo quando não conseguir avançar nas atividades."
+          },
+          {
+            "letter": "C",
+            "text": "Solicitar à IA uma solução completa e estudar somente a resposta final depois de entregar a atividade."
+          }
+        ],
+        "correct_awnser": "A"
+      }
+    ]
+  },
+  "$schema": "./node_modules/json-server/schema.json"
+}

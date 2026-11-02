@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(4, 23, 53);
+}
+
+.bg-blue {
+    background-color: #086bff;
+}
+
+.btn.bg-blue:hover {
+    background-color: #0558d1;
+    color: #fff;
+}
+
+.result-wrapper {
+    max-width: 800px;
+}
+
+/* Caixa que mostra o nível; a cor do texto é definida pelo script.js */
+.caixa-nivel {
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #dee2e6;
+    border-radius: 12px;
+    background-color: #0b1f3f;
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
