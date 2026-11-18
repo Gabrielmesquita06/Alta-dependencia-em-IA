@@ -1,7 +1,4 @@
 import { getFormQuestions, SubmitForm, getUserID, checkUserExists } from "../js-functions/script.js";
-
-// Se o usuário já existe, vai direto para o diagnóstico,
-// a não ser que ele tenha vindo pelo botão "Responder novamente" (?refazer=1)
 const params = new URLSearchParams(window.location.search);
 const refazendo = params.has("refazer");
 

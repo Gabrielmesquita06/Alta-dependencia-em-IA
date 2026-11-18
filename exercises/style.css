@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(4, 23, 53);
+}
+
+.bg-blue {
+    background-color: #086bff;
+}
+
+.btn.bg-blue:hover {
+    background-color: #0558d1;
+    color: #fff;
+}
+
+.exercises-wrapper {
+    max-width: 800px;
+}
