@@ -166,11 +166,11 @@
       "form_answers": [
         {
           "questionId": "form-1",
-          "letter": "B"
+          "letter": "A"
         },
         {
           "questionId": "form-2",
-          "letter": "D"
+          "letter": "A"
         },
         {
           "questionId": "form-3",
@@ -178,27 +178,27 @@
         },
         {
           "questionId": "form-4",
-          "letter": "C"
+          "letter": "D"
         },
         {
           "questionId": "form-5",
-          "letter": "D"
+          "letter": "B"
         },
         {
           "questionId": "form-6",
-          "letter": "C"
-        },
-        {
-          "questionId": "form-7",
-          "letter": "C"
-        },
-        {
-          "questionId": "form-8",
           "letter": "D"
         },
         {
+          "questionId": "form-7",
+          "letter": "B"
+        },
+        {
+          "questionId": "form-8",
+          "letter": "B"
+        },
+        {
           "questionId": "form-9",
-          "letter": "C"
+          "letter": "B"
         },
         {
           "questionId": "form-10",
@@ -206,35 +206,35 @@
         },
         {
           "questionId": "form-11",
-          "letter": "A"
+          "letter": "D"
         },
         {
           "questionId": "form-12",
-          "letter": "A"
+          "letter": "B"
         },
         {
           "questionId": "form-13",
-          "letter": "C"
+          "letter": "B"
         },
         {
           "questionId": "form-14",
-          "letter": "A"
-        },
-        {
-          "questionId": "form-15",
           "letter": "C"
         },
         {
+          "questionId": "form-15",
+          "letter": "B"
+        },
+        {
           "questionId": "form-16",
-          "letter": "D"
+          "letter": "A"
         }
       ],
-      "level": "attention",
+      "level": "low-level",
       "routine": {
-        "time_without_IA": null,
-        "time_no_IA_start": null,
-        "time_no_IA_end": null,
-        "exercise_time": null
+        "time_without_IA": 1,
+        "time_no_IA_start": "19:00",
+        "time_no_IA_end": "20:00",
+        "exercise_time": 1
       },
       "progress": {
         "day": 3,
@@ -696,126 +696,147 @@
     }
   ],
   "exercises": {
-    "critical": [
-      {
-        "id": "critical-1",
-        "question": "Qual número completa a sequência: 2, 4, 6, 8, ...?",
-        "alternates": [
-          {
-            "letter": "A",
-            "text": "9"
-          },
-          {
-            "letter": "B",
-            "text": "10"
-          },
-          {
-            "letter": "C",
-            "text": "12"
-          }
-        ],
-        "correct_awnser": "B"
-      },
-      {
-        "id": "critical-2",
-        "question": "Qual afirmação descreve um uso consciente da IA?",
-        "alternates": [
-          {
-            "letter": "A",
-            "text": "Conferir a resposta e tentar compreender o raciocínio."
-          },
-          {
-            "letter": "B",
-            "text": "Copiar toda resposta sem revisar."
-          },
-          {
-            "letter": "C",
-            "text": "Usar a IA como única fonte em qualquer situação."
-          }
-        ],
-        "correct_awnser": "A"
-      }
-    ],
-    "attention": [
-      {
-        "id": "attention-1",
-        "question": "Qual número completa a sequência: 3, 6, 12, 24, ...?",
-        "alternates": [
-          {
-            "letter": "A",
-            "text": "30"
-          },
-          {
-            "letter": "B",
-            "text": "36"
-          },
-          {
-            "letter": "C",
-            "text": "48"
-          }
-        ],
-        "correct_awnser": "C"
-      },
-      {
-        "id": "attention-2",
-        "question": "Um texto afirma que um produto funciona, mas não apresenta evidências. Qual é a melhor atitude?",
-        "alternates": [
-          {
-            "letter": "A",
-            "text": "Aceitar a afirmação porque está bem escrita."
-          },
-          {
-            "letter": "B",
-            "text": "Procurar evidências e comparar fontes antes de concluir."
-          },
-          {
-            "letter": "C",
-            "text": "Compartilhar a afirmação antes de verificar."
-          }
-        ],
-        "correct_awnser": "B"
-      }
-    ],
-    "low-level": [
-      {
-        "id": "low-1",
-        "question": "Se todos os elementos do grupo A pertencem ao grupo B e X pertence a A, o que podemos concluir?",
-        "alternates": [
-          {
-            "letter": "A",
-            "text": "X não pertence a B."
-          },
-          {
-            "letter": "B",
-            "text": "Todos os elementos de B pertencem a A."
-          },
-          {
-            "letter": "C",
-            "text": "X pertence a B."
-          }
-        ],
-        "correct_awnser": "C"
-      },
-      {
-        "id": "low-2",
-        "question": "Um estudo encontrou uma associação entre dois fatores. Isso, por si só, demonstra que um causa o outro?",
-        "alternates": [
-          {
-            "letter": "A",
-            "text": "Sim, qualquer associação demonstra causa."
-          },
-          {
-            "letter": "B",
-            "text": "Não, é necessário investigar outras explicações e evidências."
-          },
-          {
-            "letter": "C",
-            "text": "Sim, desde que os fatores ocorram ao mesmo tempo."
-          }
-        ],
-        "correct_awnser": "B"
-      }
-    ]
+    "critical": {
+      "duration": 3,
+      "questions": [
+        {
+          "id": "critical-1",
+          "type": "Raciocínio lógico",
+          "img": "",
+          "question": "Qual número completa a sequência: 2, 4, 6, 8, ...?",
+          "alternates": [
+            {
+              "letter": "A",
+              "text": "9"
+            },
+            {
+              "letter": "B",
+              "text": "10"
+            },
+            {
+              "letter": "C",
+              "text": "12"
+            }
+          ],
+          "correct_awnser": "B"
+        },
+        {
+          "id": "critical-2",
+          "type": "Uso consciente da IA",
+          "img": "",
+          "question": "Qual afirmação descreve um uso consciente da IA?",
+          "alternates": [
+            {
+              "letter": "A",
+              "text": "Conferir a resposta e tentar compreender o raciocínio."
+            },
+            {
+              "letter": "B",
+              "text": "Copiar toda resposta sem revisar."
+            },
+            {
+              "letter": "C",
+              "text": "Usar a IA como única fonte em qualquer situação."
+            }
+          ],
+          "correct_awnser": "A"
+        }
+      ]
+    },
+    "attention": {
+      "duration": 2,
+      "questions": [
+        {
+          "id": "attention-1",
+          "type": "Raciocínio lógico",
+          "img": "",
+          "question": "Qual número completa a sequência: 3, 6, 12, 24, ...?",
+          "alternates": [
+            {
+              "letter": "A",
+              "text": "30"
+            },
+            {
+              "letter": "B",
+              "text": "36"
+            },
+            {
+              "letter": "C",
+              "text": "48"
+            }
+          ],
+          "correct_awnser": "C"
+        },
+        {
+          "id": "attention-2",
+          "type": "Pensamento crítico",
+          "img": "",
+          "question": "Um texto afirma que um produto funciona, mas não apresenta evidências. Qual é a melhor atitude?",
+          "alternates": [
+            {
+              "letter": "A",
+              "text": "Aceitar a afirmação porque está bem escrita."
+            },
+            {
+              "letter": "B",
+              "text": "Procurar evidências e comparar fontes antes de concluir."
+            },
+            {
+              "letter": "C",
+              "text": "Compartilhar a afirmação antes de verificar."
+            }
+          ],
+          "correct_awnser": "B"
+        }
+      ]
+    },
+    "low-level": {
+      "duration": 1,
+      "questions": [
+        {
+          "id": "low-1",
+          "type": "Raciocínio lógico",
+          "img": "",
+          "question": "Se todos os elementos do grupo A pertencem ao grupo B e X pertence a A, o que podemos concluir?",
+          "alternates": [
+            {
+              "letter": "A",
+              "text": "X não pertence a B."
+            },
+            {
+              "letter": "B",
+              "text": "Todos os elementos de B pertencem a A."
+            },
+            {
+              "letter": "C",
+              "text": "X pertence a B."
+            }
+          ],
+          "correct_awnser": "C"
+        },
+        {
+          "id": "low-2",
+          "type": "Pensamento crítico",
+          "img": "",
+          "question": "Um estudo encontrou uma associação entre dois fatores. Isso, por si só, demonstra que um causa o outro?",
+          "alternates": [
+            {
+              "letter": "A",
+              "text": "Sim, qualquer associação demonstra causa."
+            },
+            {
+              "letter": "B",
+              "text": "Não, é necessário investigar outras explicações e evidências."
+            },
+            {
+              "letter": "C",
+              "text": "Sim, desde que os fatores ocorram ao mesmo tempo."
+            }
+          ],
+          "correct_awnser": "B"
+        }
+      ]
+    }
   },
   "$schema": "./node_modules/json-server/schema.json"
 }

@@ -1,7 +1,6 @@
 import { getFormQuestions, SubmitForm, getUserID, checkUserExists } from "../js-functions/script.js";
 const params = new URLSearchParams(window.location.search);
 const refazendo = params.has("refazer");
-
 const savedUserId = getUserID();
 if (!refazendo && savedUserId && await checkUserExists(savedUserId)) {
     window.location.replace("/diagnostic/index.html");
@@ -37,13 +36,60 @@ for (let i = 0; i < formquestions.length; i++) {
 const form = document.getElementById("Form");
 const botaoEnviar = form.querySelector('button[type="submit"]');
 
-form.addEventListener("submit", async (event) => {
-    event.preventDefault();
+// Controla em qual etapa o formulário está: "perguntas" -> "horario"
+// Em vez de ter 2 listeners de submit (que disparam juntos), temos UM só
+// que decide o que fazer olhando esta variável.
+let etapa = "perguntas";
 
-    // Bloqueia o botão logo no primeiro clique para evitar envio duplicado
-    botaoEnviar.disabled = true;
-    botaoEnviar.textContent = "Enviando...";
+// Guarda as respostas da etapa 1 na memória até o horário ser escolhido.
+// NADA vai para o servidor antes da etapa 2: assim o db.json só muda uma vez,
+// já com tudo preenchido (e o Live Server não recarrega a página no meio).
+let respostasColetadas = [];
 
+// Troca as perguntas pela tela de escolher o horário
+function mostrarTelaHorario() {
+    // Reaproveita o mesmo botão do formulário, só trocando o texto
+    botaoEnviar.textContent = "Enviar Horário";
+    container.innerHTML = `
+        <div class="card mb-4 border-light shadow-sm">
+            <div class="card-body p-4">
+                <h5 class="card-title fs-6 fw-semibold text-dark mb-3">Qual é o seu horário disponível para realizarmos os exercícios?</h5>
+                <div class="d-flex align-items-center gap-2">
+                    <input type="time" class="form-control" id="horaInicio" value="19:00">
+                    <span>até</span>
+                    <input type="time" class="form-control" id="horaFim" value="20:00">
+                </div>
+            </div>
+        </div>`;
+}
+
+// Lê os dois campos de hora e devolve os minutos totais (ou null se inválido)
+function getSelectedTime() {
+    const horarioInicio = document.getElementById("horaInicio").value;
+    const horarioFim = document.getElementById("horaFim").value;
+    const partesInicio = horarioInicio.split(':');
+    const partesFim = horarioFim.split(':');
+    const horaInicio = (parseInt(partesInicio[0], 10)) * 60 + parseInt(partesInicio[1], 10);
+    const horaFim = (parseInt(partesFim[0], 10)) * 60 + parseInt(partesFim[1], 10);
+    if (horaFim <= horaInicio) {
+        alert("O horário final deve ser maior que o horário inicial.");
+        return null;
+    } else if (horaFim - horaInicio < 60) {
+        alert("O intervalo entre os horários deve ser de pelo menos 1 hora.");
+        return null;
+    }
+    return { horaInicio, horaFim };
+}
+
+// Converte minutos totais em "HH:MM" (ex.: 1145 -> "19:05")
+function formatTime(totalMinutes) {
+    const horas = String(Math.floor(totalMinutes / 60)).padStart(2, "0");
+    const minutos = String(totalMinutes % 60).padStart(2, "0");
+    return `${horas}:${minutos}`;
+}
+
+// ETAPA 1: só coleta as respostas (não envia nada) e avança para o horário
+function coletarPerguntas() {
     const respostas = [];
 
     for (let i = 0; i < formquestions.length; i++) {
@@ -59,9 +105,7 @@ form.addEventListener("submit", async (event) => {
 
         // Segurança extra: se alguma pergunta ficou sem resposta, não envia
         if (letraMarcada === null) {
-            alert(`Responda a pergunta ${i + 1} antes de enviar.`);
-            botaoEnviar.disabled = false;
-            botaoEnviar.textContent = "Enviar Respostas";
+            alert(`Responda a pergunta ${i + 1} antes de continuar.`);
             return;
         }
 
@@ -71,14 +115,48 @@ form.addEventListener("submit", async (event) => {
         });
     }
 
+    // Tudo respondido: guarda na memória e troca para a tela de horário
+    respostasColetadas = respostas;
+    etapa = "horario";
+    mostrarTelaHorario();
+}
+
+// ETAPA 2: monta UM objeto com respostas + horário e envia tudo de uma vez
+async function enviarHorario() {
+    const selectedTime = getSelectedTime();
+    if (!selectedTime) {
+        return; // horário inválido: getSelectedTime já mostrou o alerta
+    }
+
     try {
-        await SubmitForm(respostas);
-        window.location.href = "/diagnostic/index.html"; // ajuste para a página de resultado
+        botaoEnviar.disabled = true;
+        botaoEnviar.textContent = "Enviando...";
+        const dadosFormulario = {
+            answers: respostasColetadas,
+            routine: {
+                exercise_time: Math.floor((selectedTime.horaFim - selectedTime.horaInicio) / 60),
+                time_no_IA_start: formatTime(selectedTime.horaInicio),
+                time_no_IA_end: formatTime(selectedTime.horaFim)
+            }
+        };
+        await SubmitForm(dadosFormulario);
+        window.location.replace("/diagnostic/index.html");
     } catch (error) {
         console.error(error);
         alert("Erro ao enviar o formulário");
         botaoEnviar.disabled = false;
-        botaoEnviar.textContent = "Enviar Respostas";
+        botaoEnviar.textContent = "Enviar Horário";
+    }
+}
+
+// O ÚNICO listener de submit: decide o que fazer conforme a etapa
+form.addEventListener("submit", async (event) => {
+    // Impede o navegador de recarregar a página ao enviar o formulário
+    event.preventDefault();
+
+    if (etapa === "perguntas") {
+        coletarPerguntas();
+    } else {
+        await enviarHorario();
     }
 });
-

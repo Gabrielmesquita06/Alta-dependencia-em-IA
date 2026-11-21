@@ -40,7 +40,14 @@ export async function GetUserData(UserId)
     throw error;
    };
 }
-export async function SubmitForm(UserResponse){
+// Recebe UM objeto com tudo que o formulário coletou:
+// {
+//   answers: [{ questionId, letter }, ...],
+//   routine: { time_no_IA_start, time_no_IA_end, exercise_time }
+// }
+export async function SubmitForm(formData){
+    const UserResponse = formData.answers;
+    const routine = formData.routine;
     const savedUserId = localStorage.getItem('userId');
     const userexists = savedUserId ? await checkUserExists(savedUserId) : false;
     let score = 0;
@@ -48,10 +55,10 @@ export async function SubmitForm(UserResponse){
         form_answers : [],
         level : '',
         routine : {
-           time_without_IA : null, 
-           time_no_IA_start : null,
-           time_no_IA_end : null,
-           exercise_time : null,
+           time_without_IA : null,
+           time_no_IA_start : routine.time_no_IA_start,
+           time_no_IA_end : routine.time_no_IA_end,
+           exercise_time : routine.exercise_time,
         },
         progress: {
             day : 1,
@@ -66,18 +73,22 @@ export async function SubmitForm(UserResponse){
 
     if (score >= 80) {
         user_object.level = 'critical';
+                user_object.routine.time_without_IA = 3;
     } else if (score >= 60) {
         user_object.level = 'attention';
+        user_object.routine.time_without_IA = 2;
     }  else {
         user_object.level = 'low-level';
+        user_object.routine.time_without_IA = 1;
     }
-   
+
     let response;
     if (userexists) {
-        // Usuário já existe: atualiza só respostas e nível, sem criar outro registro
+        // Usuário já existe: atualiza respostas, nível e rotina, sem criar outro registro
         response = await request(`${users}/${savedUserId}`, 'PATCH', {
             form_answers: user_object.form_answers,
-            level: user_object.level
+            level: user_object.level,
+            routine: user_object.routine
         });
     } else {
         response = await request(users, 'POST', user_object);
@@ -165,4 +176,56 @@ export async function SubimitUserFeedback(feedback, UserId) {
     }catch(error){
         throw Error("Erro ao enviar feedback");
     }
+}
+export async function SubmitUserRoutine(routine) {
+    const savedUserId = localStorage.getItem('userId');
+    const userexists = savedUserId ? await checkUserExists(savedUserId) : false;
+    if (!userexists) {
+        throw new Error('Usuário não encontrado');
+    }
+    const userdata = await request(`${users}/${savedUserId}`);
+    let hoursNoIA = 1;
+    if (userdata.level === 'critical') {
+        hoursNoIA = 3;
+    } else if (userdata.level === 'attention') {
+        hoursNoIA = 2;
+    }
+    const objectToUpdate = {
+        ...userdata,
+        routine: {
+            time_without_IA: hoursNoIA,
+            time_no_IA_start: routine.time_no_IA_start,
+            time_no_IA_end: routine.time_no_IA_end,
+            exercise_time: routine.exercise_time 
+
+        }
+    };
+    try {
+        const response = await request(`${users}/${savedUserId}`, "PATCH", objectToUpdate);
+        return response;
+    } catch (error) {
+        throw new Error('Erro ao enviar rotina do usuário');
+    }   
+}
+export async function getDashboardData(){
+    const savedUserId = localStorage.getItem('userId');
+    const userexists = savedUserId ? await checkUserExists(savedUserId) : false;
+    const userdata = await request(`${users}/${savedUserId}`);
+    if (!userexists) {
+        window.location.replace("/form/index.html");
+}
+// getUserExercises devolve { duration, questions } do nivel do usuario
+const userExercises = await getUserExercises(savedUserId);
+const objecttoReturn = {
+    level : userdata.level,
+    userprogress : userdata.progress,
+    routine_start : userdata.routine.time_no_IA_start,
+    routine_end : userdata.routine.time_no_IA_end,
+    exercise_time : userdata.routine.exercise_time,
+    time_without_IA : userdata.routine.time_without_IA,
+    exercise_duration : userExercises.duration,
+    // cada item: { id, type, img, question, alternates, correct_awnser }
+    exercise : userExercises.questions
+}
+return objecttoReturn;
 }
