@@ -132,16 +132,25 @@ export async function getTodayExercises(userId) {
     const allExercises = await getUserExercises(userId);
     return allExercises.filter(ex => ex.day === userdata.progress.day);
 }
+// true se o usuário já pode fazer o exercício hoje (hoje é um dia depois do último envio)
+export function podeFazerHoje(progress) {
+    const hoje = new Date().toLocaleDateString("sv-SE");
+    if (!progress.last_submit_date) return true;
+    return hoje > progress.last_submit_date;
+}
+
 export async function submitQuizAnswers(userId, quizAnswers) {
     let userExists = await checkUserExists(userId);
     if (!userExists) {
         throw new Error('Usuário não encontrado');
     }
     const userdata = await GetUserData(userId);
+    const hoje = new Date().toLocaleDateString("sv-SE"); // "AAAA-MM-DD" no horário local
     const objectToUpdate = {
         progress : {
         ...userdata.progress,
         day : userdata.progress.day + 1,
+        last_submit_date : hoje,
         quiz_answers: [...userdata.progress.quiz_answers]
     }};
     for (let i = 0; i < quizAnswers.length; i++) {

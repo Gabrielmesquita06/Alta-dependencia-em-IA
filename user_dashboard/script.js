@@ -1,4 +1,4 @@
-import {getDashboardData} from '../js-functions/script.js';
+import {getDashboardData, podeFazerHoje} from '../js-functions/script.js';
 const userdata = await getDashboardData();
 const textoProgresso = document.getElementById("textoProgresso");
 const barraProgresso = document.getElementById("barraProgresso");
@@ -63,9 +63,16 @@ function PreencherDashboard() {
         }
 
         // Um único botão para a lição do dia (e não um por card)
-        listaExercicios.innerHTML += `<div class="col-12">
-            <a href="../exercises/index.html" class="btn bg-blue text-white fw-bold w-100">Prosseguir para a lição do dia</a>
-        </div>`;
+        if (podeFazerHoje(progress)) {
+            listaExercicios.innerHTML += `<div class="col-12">
+                <a href="../exercises/index.html" class="btn bg-blue text-white fw-bold w-100">Prosseguir para a lição do dia</a>
+            </div>`;
+        } else {
+            // Já enviou hoje: botão desabilitado e aviso
+            listaExercicios.innerHTML += `<div class="col-12">
+                <button class="btn btn-secondary fw-bold w-100" disabled>Lição de hoje concluída. Volte amanhã!</button>
+            </div>`;
+        }
     } else {
         // day passou do total: todos os dias foram concluídos
         listaExercicios.innerHTML += `<div class="col-12 col-md-6">

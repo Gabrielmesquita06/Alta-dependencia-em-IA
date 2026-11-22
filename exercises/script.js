@@ -1,4 +1,4 @@
-import { getUserID, getTodayExercises, submitQuizAnswers } from "../js-functions/script.js";
+import { getUserID, getTodayExercises, submitQuizAnswers, GetUserData, podeFazerHoje } from "../js-functions/script.js";
 
 const form = document.getElementById("ExercisesForm");
 const container = document.getElementById("exercises");
@@ -13,17 +13,32 @@ if (!userId) {
 
 // 2. Busca os exercícios DO DIA do usuário (nível e dia atual vêm do js-functions)
 let exercicios = [];
-try {
-    exercicios = await getTodayExercises(userId);
-} catch (error) {
-    console.error(error);
-    container.innerHTML = `<p class="text-white">Não foi possível carregar seus exercícios.</p>`;
-    botaoEnviar.hidden = true;
+let deuErro = false;
+let bloqueado = false;
+if (userId) {
+    try {
+        // Já enviou hoje? Então só libera amanhã
+        const userdata = await GetUserData(userId);
+        if (!podeFazerHoje(userdata.progress)) {
+            bloqueado = true;
+            container.innerHTML = `<p class="text-dark">Você já fez o exercício de hoje. Volte amanhã!</p>
+                <a href="../user_dashboard/index.html" class="btn bg-blue text-white fw-bold">Voltar ao painel</a>`;
+            botaoEnviar.hidden = true;
+        } else {
+            exercicios = await getTodayExercises(userId);
+        }
+    } catch (error) {
+        console.error(error);
+        deuErro = true;
+        container.innerHTML = `<p class="text-white">Não foi possível carregar seus exercícios.</p>`;
+        botaoEnviar.hidden = true;
+    }
 }
 
-// Sem exercícios para o dia atual: o usuário já concluiu todos os dias
-if (exercicios.length === 0) {
-    container.innerHTML = `<p class="text-white">Você concluiu todos os exercícios.</p>`;
+// Sem exercícios para o dia atual (e sem erro): o usuário já concluiu todos os dias
+if (!deuErro && !bloqueado && exercicios.length === 0) {
+    container.innerHTML = `<p class="text-white">Você concluiu todos os exercícios.</p>
+        <a href="../user_dashboard/index.html" class="btn bg-blue text-white fw-bold">Voltar ao painel</a>`;
     botaoEnviar.hidden = true;
 }
 
@@ -99,6 +114,8 @@ form.addEventListener("submit", async (event) => {
     try {
         await submitQuizAnswers(userId, respostas);
         botaoEnviar.textContent = "Respostas enviadas";
+        // Link para voltar ao painel (o dia já avançou)
+        resultado.innerHTML += ` <a href="../user_dashboard/index.html" class="alert-link">Voltar ao painel</a>`;
     } catch (error) {
         console.error(error);
         alert("Erro ao salvar as respostas");
