@@ -12,7 +12,7 @@ const horaSemIA = document.getElementById("horasSemIA");
 const quantidadeExercicios = document.getElementById("QuantidadeExercicios");
 function PreencherDashboard() {
     const progress = userdata.userprogress;
-    const nivelUsuario = userdata.level;
+    const nivelUsuario = (userdata.level === "critical" ? "Crítico" : (userdata.level === "attention" ? "Atenção" : "Controlado"));
     const exercicios = userdata.exercise;
     const duracaoTotal = userdata.exercise_duration;
     nivel.textContent = nivelUsuario;
@@ -38,6 +38,9 @@ function PreencherDashboard() {
                     <span class="badge bg-primary">${exercicioDoDia.type}</span>
                     <p class="card-text mt-2 mb-0">${exercicioDoDia.question}</p>
                 </div>
+                <div class="card-footer bg-white border-0 pb-3">
+                    <a href="../exercises/index.html" class="btn bg-blue text-white fw-bold w-100">Prosseguir para a lição do dia</a>
+                </div>
             </div>
         </div>`;
     } else {
@@ -51,5 +54,7 @@ function PreencherDashboard() {
             </div>
         </div>`;
     }
+    barraProgresso.style.width = `${(concluidos / exercicios.length) * 100}%`;
+    barraProgresso.textContent = `${Math.round((concluidos / exercicios.length) * 100)}%`;  
 }
 PreencherDashboard();
