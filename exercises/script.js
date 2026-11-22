@@ -1,4 +1,4 @@
-import { getUserID, getUserExercises, submitQuizAnswers } from "../js-functions/script.js";
+import { getUserID, getTodayExercises, submitQuizAnswers } from "../js-functions/script.js";
 
 const form = document.getElementById("ExercisesForm");
 const container = document.getElementById("exercises");
@@ -11,13 +11,19 @@ if (!userId) {
     window.location.replace("/form/index.html");
 }
 
-// 2. Busca os exercícios do nível do usuário (o js-functions já faz essa comparação de nível)
+// 2. Busca os exercícios DO DIA do usuário (nível e dia atual vêm do js-functions)
 let exercicios = [];
 try {
-    exercicios = await getUserExercises(userId);
+    exercicios = await getTodayExercises(userId);
 } catch (error) {
     console.error(error);
     container.innerHTML = `<p class="text-white">Não foi possível carregar seus exercícios.</p>`;
+    botaoEnviar.hidden = true;
+}
+
+// Sem exercícios para o dia atual: o usuário já concluiu todos os dias
+if (exercicios.length === 0) {
+    container.innerHTML = `<p class="text-white">Você concluiu todos os exercícios.</p>`;
     botaoEnviar.hidden = true;
 }
 

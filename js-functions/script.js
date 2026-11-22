@@ -118,11 +118,19 @@ export async function getUserExercises(userId) {
         let userLevel = await request(`${users}/${userId}`);
         let level = userLevel.level;
         const allExercises = await request(exercises);
+        // Cada nível é uma LISTA de exercícios: [{ id, day, category, tip, question, alternates, correct_awnser }, ...]
         let exercise = allExercises[level];
         return exercise;
     } catch (error) {
         throw new Error('Erro ao buscar exercícios do usuário');
     }
+}
+
+// Só os exercícios do dia atual do usuário (progress.day)
+export async function getTodayExercises(userId) {
+    const userdata = await GetUserData(userId);
+    const allExercises = await getUserExercises(userId);
+    return allExercises.filter(ex => ex.day === userdata.progress.day);
 }
 export async function submitQuizAnswers(userId, quizAnswers) {
     let userExists = await checkUserExists(userId);
@@ -214,7 +222,7 @@ export async function getDashboardData(){
     if (!userexists) {
         window.location.replace("/form/index.html");
 }
-// getUserExercises devolve { duration, questions } do nivel do usuario
+// getUserExercises devolve a LISTA de exercicios do nivel do usuario (todos os dias)
 const userExercises = await getUserExercises(savedUserId);
 const objecttoReturn = {
     level : userdata.level,
@@ -223,9 +231,8 @@ const objecttoReturn = {
     routine_end : userdata.routine.time_no_IA_end,
     exercise_time : userdata.routine.exercise_time,
     time_without_IA : userdata.routine.time_without_IA,
-    exercise_duration : userExercises.duration,
-    // cada item: { id, type, img, question, alternates, correct_awnser }
-    exercise : userExercises.questions
+    // cada item: { id, day, category, tip, question, alternates, correct_awnser }
+    exercise : userExercises
 }
 return objecttoReturn;
 }
